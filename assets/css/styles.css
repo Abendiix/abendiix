@@ -1,0 +1,11 @@
+.btn-test {
+  color: #fff;
+  background-color: #fff;
+  /*border-color: #fff;*/
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem #ffffff;
+}
+
