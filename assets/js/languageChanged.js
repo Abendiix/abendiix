@@ -45,7 +45,7 @@ function updateTexts(language)
         document.getElementById("contact").innerHTML = "Contactar por correo";
         document.getElementById("copy").innerHTML = "Copiar";
         document.getElementById("openApp").innerHTML = "Abrir aplicación";
-        document.getElementById("openApp").href = "contacto@abendiix.com";
+        document.getElementById("openApp").href = "mailto:contacto@abendiix.com";
         document.getElementById("emotiText").innerHTML = "¡Me encontraste!";
     }
     else if (localStorage.getItem("language") == "en")
@@ -58,7 +58,7 @@ function updateTexts(language)
         document.getElementById("contact").innerHTML = "Contact via email";
         document.getElementById("copy").innerHTML = "Copy";
         document.getElementById("openApp").innerHTML = "Open app";
-        document.getElementById("openApp").href = "contact@abendiix.com";
+        document.getElementById("openApp").href = "mailto:contact@abendiix.com";
         document.getElementById("emotiText").innerHTML = "You found me!";
     }
     else if (localStorage.getItem("language") == "ja")
@@ -71,7 +71,7 @@ function updateTexts(language)
         document.getElementById("contact").innerHTML = "メールで私にご連絡ください";
         document.getElementById("copy").innerHTML = "コピー";
         document.getElementById("openApp").innerHTML = "アプリを開く";
-        document.getElementById("openApp").href = "contact@abendiix.com";
+        document.getElementById("openApp").href = "mailto:contact@abendiix.com";
         document.getElementById("emotiText").innerHTML = "私を見つけた！";
     }
 }
