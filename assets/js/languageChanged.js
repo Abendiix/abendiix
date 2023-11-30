@@ -1,6 +1,4 @@
 window.onload = (event) => {
-    console.log(localStorage.getItem("language"));
-
     if(localStorage.getItem("language") == "es")
     {
         updateTexts("es");
