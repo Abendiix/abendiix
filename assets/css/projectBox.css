@@ -1,0 +1,47 @@
+@media (min-width: 0px)
+{
+    .projectBox
+    {
+        width: 75%;
+    }
+}
+
+@media (min-width: 576px)
+{
+    .projectBox
+    {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .projectBox
+    {
+        width: 33%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .projectBox
+    {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .projectBox
+    {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1400px)
+{
+    .projectBox
+    {
+        width: 20%;
+    }
+}
