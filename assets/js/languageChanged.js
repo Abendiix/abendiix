@@ -18,19 +18,19 @@ window.onload = (event) => {
 function changeToES()
 {
     localStorage.setItem("language", "es");
-    location.reload();
+    updateTexts("es");
 }
 
 function changeToEN()
 {
     localStorage.setItem("language", "en");
-    location.reload();
+    updateTexts("en");
 }
 
 function changeToJA()
 {
     localStorage.setItem("language", "ja");
-    location.reload();
+    updateTexts("ja");
 }
 
 function updateTexts(language)
