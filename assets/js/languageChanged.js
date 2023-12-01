@@ -2,33 +2,42 @@ window.onload = (event) => {
     if(localStorage.getItem("language") == "es")
     {
         updateTexts("es");
+        document.documentElement.setAttribute("lang", 'es');
     }
     else if (localStorage.getItem("language") == "en")
     {
         updateTexts("en");
+        document.documentElement.setAttribute("lang", 'en');
     }
     else if (localStorage.getItem("language") == "ja")
     {
         updateTexts("ja");
+        document.documentElement.setAttribute("lang", 'ja');
     }    
 };
 
 function changeToES()
 {
     localStorage.setItem("language", "es");
+    document.documentElement.setAttribute("lang", 'es');
     updateTexts("es");
+    location.reload();
 }
 
 function changeToEN()
 {
     localStorage.setItem("language", "en");
+    document.documentElement.setAttribute("lang", 'en');
     updateTexts("en");
+    location.reload();
 }
 
 function changeToJA()
 {
     localStorage.setItem("language", "ja");
+    document.documentElement.setAttribute("lang", 'ja');
     updateTexts("ja");
+    location.reload();
 }
 
 function updateTexts(language)
