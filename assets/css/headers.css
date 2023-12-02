@@ -1,0 +1,77 @@
+@media (min-width: 0px)
+{
+    h2
+    {
+        font-size: 1.25rem;
+    }
+
+    h3
+    {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 576px)
+{
+    h2
+    {
+        font-size: 1.5rem;
+    }
+    
+    h3
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px)
+{
+    h2
+    {
+        font-size: 1.5rem;
+    }
+    
+    h3
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px)
+{
+    h2
+    {
+        font-size: 1.75rem;
+    }
+    
+    h3
+    {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    h2
+    {
+        font-size: 1.75rem;
+    }
+    
+    h3
+    {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1400px)
+{
+    h2
+    {
+        font-size: 2rem;
+    }
+    
+    h3
+    {
+        font-size: 1.5rem;
+    }
+}

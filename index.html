@@ -1,125 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Abendiix</title>
-    <meta name="description" content="Games and tools!">
-    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logos/favicon.svg">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/projectBox.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Abendiix</title>
+        <meta name="description" content="Games and tools!">
+        <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logos/favicon.svg">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/projectBox.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/headers.css">
+    </head>
 
-<body class="font-monospace" style="font-size: 24px;">
-    
-    <!--Container for the header, moto and languages-->
-    <div class="container">
-        <!--Header with banner and moto-->
-        <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
-            <div style="margin-top: 15px;" class="col-md-6">
-                <!--Banner-->
-                <img alt="Abendiix's logo expanded in banner form. The letters are black and the background of the image is transparent."
-                src="assets/img/logos/blackBanner.svg" style="max-width: 80%;" id="banner">
+    <body class="font-monospace" style="font-size: 24px;">
+        
+        <!--Container for the header, moto and languages-->
+        <div class="container">
+            <!--Header with banner and moto-->
+            <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
+                <div style="margin-top: 15px;" class="col-md-6">
+                    <!--Banner-->
+                    <h1>
+                        <a href="http://abendiix.com">
+                            <img alt="Abendiix's logo expanded in banner form. The letters are black and the background is transparent."
+                            src="assets/img/logos/blackBanner.svg" style="max-width: 80%;" id="banner">
+                        </a>
+                    </h1>
 
-                <!--Moto-->
-                <h3 style="margin: 8px; margin-bottom: 15px;" id="moto">Games and tools!</h3>
-            </div>
-        </div>
-
-        <!--Section of the languages available-->
-        <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
-            <div class="col-md-6">
-                <a onclick="changeToES()" id="es">ESP</a>
-                ·
-                <a style="text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
-                ·
-                <a onclick="changeToJA()" id="ja">日本語</a>
-            </div>
-        </div>
-    </div>
-
-    <!--Projects' container start-->
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            
-            <!--Project box start-->
-            <div class="projectBox" style="padding: 25px;">
-                <div class="row swing animated" style="border-radius: 10px;margin-top: -15px;margin-bottom: -15px;border-style: solid;">
-                    <div class="col" style="background: #ffffff; border-radius: 10px; padding: 10%;">
-                        
-                        <!--Project icon-->
-                        <img alt="Logo/Icon for the project called 'Sprites Love'. It shows a pixelated S from the word 'Sprites' and one pixel down and to the right there's a red pixelated heart representing the word 'Love'."
-                        src="assets/img/spriteslove.svg" style="width: inherit; border-radius: 10px; margin-bottom: 10px; border-style: solid; border-color: #141414; margin-top: 0px;" id="spritesloveicon">
-                        
-                        <!--Project name/title-->
-                        <p style="margin: 0px;" id="sprlv">Sprites Love</p>
-                        
-                        <!--Project's links-->
-                        <div class="row text-center">
-                            <div class="col">
-
-                                <!--Website icon-->
-                                <a href="https://spriteslove.com" target="_blank">
-                                    <img alt="Black icon that symbolizes a website link with two diagonal chains that is also used a link to visit the website of the project 'Sprites Love'."
-                                    src="assets/img/icons/link.svg" style="margin: 4%; width: min(40px, 25%);" id="spriteslovelinkicon">
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
+                    <!--Moto-->
+                    <h2 style="margin: 8px; margin-bottom: 15px;" id="moto">Games and tools!</h3>
                 </div>
             </div>
-            <!--Project box end-->
 
+            <!--Section of the languages available-->
+            <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h3 id="changelanguageheader">Change language</h3>
+                    <a role="button" onclick="changeToES()" id="es">ES</a>
+                    ·
+                    <a role="button" style="text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
+                    ·
+                    <a role="button" onclick="changeToJA()" id="ja">日本語</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--Projects' container start-->
 
-    <!--Section for external sites-->
-    <div class="text-center" style="margin: 2vh; margin-top: 2vh;">
-        <!--ko-fi icon-->
-        <a href="https://ko-fi.com/abendiix" target="_blank">
-            <img alt="Black icon of the platform Ko-fi, used to redirect to Abendiix's profile."
-            src="assets/img/icons/ko-fi.svg" style="width: min(50px, 25%);" id="ko-fi"></a>
-        ·
-        <!--github icon-->
-        <a href="https://github.com/Abendiix" target="_blank">
-            <img alt="Black icon of the platform GitHub, used to redirect to Abendiix's profile."
-            src="assets/img/icons/github.svg" style="width: min(40px, 15%);" id="github"></a>
-        ·
-        <!--itchio icon-->
-        <a href="https://abendiix.itch.io/" target="_blank">
-            <img alt="Black icon of the platform itch.io, used to redirect to Abendiix's profile."
-            src="assets/img/icons/itch-io.svg" style="width: min(40px, 15%);" id="itchio"></a>
-        ·
-        <!--twitter icon-->
-        <a href="https://twitter.com/Abendiix" target="_blank">
-            <img alt="Black icon of the platform Twitter, used to redirect to Abendiix's profile."
-            src="assets/img/icons/x-twitter.svg" style="width: min(40px, 15%);" id="twitter">
-        </a>
-    </div>
+        <!--Projects' container start-->
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                
+                <!--Project box start-->
+                <div class="projectBox" style="padding: 25px;">
+                    <div class="row swing animated" style="border-radius: 10px;margin-top: -15px;margin-bottom: -15px;border-style: solid;">
+                        <div class="col" style="background: #ffffff; border-radius: 10px; padding: 10%;">
+                            
+                            <!--Project icon-->
+                            <img alt="Logo for 'Sprites Love'. It shows a pixelated S from the word 'Sprites' and one pixel down and to the right there's a pixelated heart representing the word 'Love'."
+                            src="assets/img/spriteslove.svg" style="width: inherit; border-radius: 10px; margin-bottom: 10px; border-style: solid; border-color: #141414; margin-top: 0px;" id="spritesloveicon">
+                            
+                            <!--Project name/title-->
+                            <p style="margin: 0px;" id="sprlv">Sprites Love</p>
+                            
+                            <!--Project's links-->
+                            <div class="row text-center">
+                                <div class="col">
 
-    <!--Contact section-->
-    <div class="text-center" style="margin: 2vh; margin-bottom: 1023%;">
-        <p style="margin: 8px; color: #141414;" id="contact">Contact via email</p>
-        <a style="color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy">Copy</a>
-        <a href="mailto:contact@abendiix.com" style="color: #141414; margin: 10px;" id="openApp">Open app</a>
-    </div>
+                                    <!--Website icon-->
+                                    <a href="https://spriteslove.com" target="_blank">
+                                        <img alt="Black icon that symbolizes a website link with two diagonal chains that is also used a link to visit the website for 'Sprites Love'."
+                                        src="assets/img/icons/link.svg" style="margin: 4%; width: min(40px, 25%);" id="spriteslovelinkicon">
+                                    </a>
 
-    <!--Emoti gag-->
-    <p id="emotiText">You found me!</p>
-    <p id="emoti"></p>
+                                </div>
+                            </div>
 
-    <!--Scripts-->
-    <script src="assets/js/copyToClipboardScript.js"></script>
-    <script src="assets/js/emoti.js"></script>
-    <script src="assets/js/languageChanged.js"></script>
+                        </div>
+                    </div>
+                </div>
+                <!--Project box end-->
 
-</body>
+            </div>
+        </div>
+        <!--Projects' container start-->
+
+        <!--Section for external sites-->
+        <div class="text-center" style="margin: 2vh; margin-top: 2vh;">
+            <!--ko-fi icon-->
+            <a href="https://ko-fi.com/abendiix" target="_blank">
+                <img alt="Black icon of the platform Ko-fi, used to redirect to Abendiix's profile."
+                src="assets/img/icons/ko-fi.svg" style="width: min(50px, 25%);" id="ko-fi"></a>
+            ·
+            <!--github icon-->
+            <a href="https://github.com/Abendiix" target="_blank">
+                <img alt="Black icon of the platform GitHub, used to redirect to Abendiix's profile."
+                src="assets/img/icons/github.svg" style="width: min(40px, 15%);" id="github"></a>
+            ·
+            <!--itchio icon-->
+            <a href="https://abendiix.itch.io/" target="_blank">
+                <img alt="Black icon of the platform itch.io, used to redirect to Abendiix's profile."
+                src="assets/img/icons/itch-io.svg" style="width: min(40px, 15%);" id="itchio"></a>
+            ·
+            <!--twitter icon-->
+            <a href="https://twitter.com/Abendiix" target="_blank">
+                <img alt="Black icon of the platform Twitter, used to redirect to Abendiix's profile."
+                src="assets/img/icons/x-twitter.svg" style="width: min(40px, 15%);" id="twitter">
+            </a>
+        </div>
+
+        <!--Contact section-->
+        <div class="text-center" style="margin: 2vh; margin-bottom: 1023%;">
+            <p style="margin: 8px; color: #141414;" id="contact">Contact via email</p>
+            <a role="button" style="color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy">Copy</a>
+            <a href="mailto:contact@abendiix.com" style="color: #141414; margin: 10px;" id="openApp">Open app</a>
+        </div>
+
+        <!--Emoti gag-->
+        <p id="emotiText">You found me!</p>
+        <p id="emoti"></p>
+
+        <!--Scripts-->
+        <script src="assets/js/copyToClipboardScript.js"></script>
+        <script src="assets/js/emoti.js"></script>
+        <script src="assets/js/languageChanged.js"></script>
+
+    </body>
 
 </html>
-
