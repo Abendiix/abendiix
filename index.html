@@ -23,8 +23,8 @@
                 <div style="margin-top: 15px;" class="col-md-6">
                     <!--Banner-->
                     <h1>
-                        <a href="http://abendiix.com">
-                            <img alt="Abendiix's logo expanded in banner form. The letters are black and the background is transparent."
+                        <a aria-label="Link to Abendiix's website (where you are now)." href="http://abendiix.com" id="linktothisweb">
+                            <img alt = "Abendiix's logo in expanded form. The letters are black and the background of the image is transparent."
                             src="assets/img/logos/blackBanner.svg" style="max-width: 80%;" id="banner">
                         </a>
                     </h1>
@@ -38,11 +38,11 @@
             <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
                 <div class="col-md-6">
                     <h3 id="changelanguageheader">Change language</h3>
-                    <a role="button" onclick="changeToES()" id="es">ES</a>
+                    <a aria-label="Cambiar el idioma de la web a español." role="button" onclick="changeToES()" id="es">ES</a>
                     ·
-                    <a role="button" style="text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
+                    <a aria-label="Change website's language to Spanish." role="button" style="text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
                     ·
-                    <a role="button" onclick="changeToJA()" id="ja">日本語</a>
+                    <a aria-label="ウェブサイトの言語を日本語に変更する。" role="button" onclick="changeToJA()" id="ja">日本語</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                         <div class="col" style="background: #ffffff; border-radius: 10px; padding: 10%;">
                             
                             <!--Project icon-->
-                            <img alt="Logo for 'Sprites Love'. It shows a pixelated S from the word 'Sprites' and one pixel down and to the right there's a pixelated heart representing the word 'Love'."
+                            <img alt="Logo for the project 'Sprites Love'. It shows a pixelated S from the word 'Sprites' and one pixel down and to the right there's a red pixelated heart representing the word 'Love'."
                             src="assets/img/spriteslove.svg" style="width: inherit; border-radius: 10px; margin-bottom: 10px; border-style: solid; border-color: #141414; margin-top: 0px;" id="spritesloveicon">
                             
                             <!--Project name/title-->
@@ -68,8 +68,8 @@
                                 <div class="col">
 
                                     <!--Website icon-->
-                                    <a href="https://spriteslove.com" target="_blank">
-                                        <img alt="Black icon that symbolizes a website link with two diagonal chains that is also used a link to visit the website for 'Sprites Love'."
+                                    <a aria-label="Link to 'Sprites Love''s website." href="https://spriteslove.com" target="_blank" id="spriteslovelink">
+                                        <img alt="Black icon that symbolizes a website link with two diagonal chains that redirects to 'Sprites Love''s web."
                                         src="assets/img/icons/link.svg" style="margin: 4%; width: min(40px, 25%);" id="spriteslovelinkicon">
                                     </a>
 
@@ -88,23 +88,23 @@
         <!--Section for external sites-->
         <div class="text-center" style="margin: 2vh; margin-top: 2vh;">
             <!--ko-fi icon-->
-            <a href="https://ko-fi.com/abendiix" target="_blank">
-                <img alt="Black icon of the platform Ko-fi, used to redirect to Abendiix's profile."
+            <a aria-label="Link to Abendiix's Ko-fi" href="https://ko-fi.com/abendiix" target="_blank" id="ko-filink">
+                <img alt="Black icon for Ko-fi that redirects to Abendiix's profile."
                 src="assets/img/icons/ko-fi.svg" style="width: min(50px, 25%);" id="ko-fi"></a>
             ·
             <!--github icon-->
-            <a href="https://github.com/Abendiix" target="_blank">
-                <img alt="Black icon of the platform GitHub, used to redirect to Abendiix's profile."
+            <a aria-label="Link to Abendiix's GitHub" href="https://github.com/Abendiix" target="_blank" id="githublink">
+                <img alt="Black icon for GitHub that redirects to Abendiix's profile."
                 src="assets/img/icons/github.svg" style="width: min(40px, 15%);" id="github"></a>
             ·
             <!--itchio icon-->
-            <a href="https://abendiix.itch.io/" target="_blank">
-                <img alt="Black icon of the platform itch.io, used to redirect to Abendiix's profile."
+            <a aria-label="Link to Abendiix's itch.io" href="https://abendiix.itch.io/" target="_blank" id="itchiolink">
+                <img alt="Black icon for itch.io that redirects to Abendiix's profile."
                 src="assets/img/icons/itch-io.svg" style="width: min(40px, 15%);" id="itchio"></a>
             ·
             <!--twitter icon-->
-            <a href="https://twitter.com/Abendiix" target="_blank">
-                <img alt="Black icon of the platform Twitter, used to redirect to Abendiix's profile."
+            <a aria-label="Link to Abendiix's Twitter" href="https://twitter.com/Abendiix" target="_blank" id="twitterlink">
+                <img alt="Black icon for Twitter that redirects to Abendiix's profile."
                 src="assets/img/icons/x-twitter.svg" style="width: min(40px, 15%);" id="twitter">
             </a>
         </div>
@@ -112,13 +112,15 @@
         <!--Contact section-->
         <div class="text-center" style="margin: 2vh; margin-bottom: 1023%;">
             <p style="margin: 8px; color: #141414;" id="contact">Contact via email</p>
-            <a role="button" style="color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy">Copy</a>
-            <a href="mailto:contact@abendiix.com" style="color: #141414; margin: 10px;" id="openApp">Open app</a>
+            <a aria-label="Copy Abendiix's contact email to clipboard." role="button" style="color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy">Copy</a>
+            <a aria-label="Open email app by default to contact Abendiix." href="mailto:contact@abendiix.com" style="color: #141414; margin: 10px;" id="openApp">Open app</a>
         </div>
 
         <!--Emoti gag-->
-        <p id="emotiText">You found me!</p>
-        <p id="emoti"></p>
+        <div aria-label="Small gag about a emoti-like text throwing randomly generated food emojis." id="emotigag">
+            <p id="emotiText">You found me!</p>
+            <p id="emoti"></p>
+        </div>
 
         <!--Scripts-->
         <script src="assets/js/copyToClipboardScript.js"></script>
