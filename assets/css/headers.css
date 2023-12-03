@@ -1,77 +1,47 @@
 @media (min-width: 0px)
 {
-    h2
+    h4
     {
-        font-size: 1.25rem;
-    }
-
-    h3
-    {
-        font-size: 1.20rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (min-width: 576px)
 {
-    h2
+    h4
     {
         font-size: 1.5rem;
-    }
-    
-    h3
-    {
-        font-size: 1.45rem;
     }
 }
 
 @media (min-width: 768px)
 {
-    h2
+    h4
     {
-        font-size: 1.5rem;
-    }
-    
-    h3
-    {
-        font-size: 1.45rem;
+        font-size: 1.3rem;
     }
 }
 
 @media (min-width: 992px)
 {
-    h2
+    h4
     {
-        font-size: 1.75rem;
-    }
-    
-    h3
-    {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
 
 @media (min-width: 1200px)
 {
-    h2
+    h4
     {
-        font-size: 1.75rem;
-    }
-    
-    h3
-    {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
 
 @media (min-width: 1400px)
 {
-    h2
+    h4
     {
         font-size: 2rem;
-    }
-    
-    h3
-    {
-        font-size: 1.95rem;
     }
 }
