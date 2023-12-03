@@ -21,7 +21,6 @@ function changeToES()
     localStorage.setItem("language", "es");
     document.documentElement.setAttribute("lang", 'es');
     updateTexts("es");
-    location.reload();
 }
 
 function changeToEN()
@@ -29,7 +28,6 @@ function changeToEN()
     localStorage.setItem("language", "en");
     document.documentElement.setAttribute("lang", 'en');
     updateTexts("en");
-    location.reload();
 }
 
 function changeToJA()
@@ -37,7 +35,6 @@ function changeToJA()
     localStorage.setItem("language", "ja");
     document.documentElement.setAttribute("lang", 'ja');
     updateTexts("ja");
-    location.reload();
 }
 
 function updateTexts(language)
