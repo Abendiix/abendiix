@@ -42,7 +42,7 @@ function updateTexts(language)
     if(localStorage.getItem("language") == "es")
     {
         //Texts
-        document.getElementById("moto").innerHTML = "¡Juegos y herramientas!";
+        document.getElementById("moto").innerHTML = "¡Juegos, herramientas y más!";
         document.getElementById("changelanguageheader").innerHTML = "Cambiar idioma";
         document.getElementById("es").style.textDecoration = "underline";
         document.getElementById("en").style.textDecoration = "none";
@@ -78,7 +78,7 @@ function updateTexts(language)
     else if (localStorage.getItem("language") == "en")
     {
         //Texts
-        document.getElementById("moto").innerHTML = "Games and tools!";
+        document.getElementById("moto").innerHTML = "Games, tools and more!";
         document.getElementById("changelanguageheader").innerHTML = "Change language";
         document.getElementById("es").style.textDecoration = "none";
         document.getElementById("en").style.textDecoration = "underline";
@@ -113,7 +113,7 @@ function updateTexts(language)
     else if (localStorage.getItem("language") == "ja")
     {
         //Texts
-        document.getElementById("moto").innerHTML = "ゲームとツール！";
+        document.getElementById("moto").innerHTML = "ゲーム、ツール、その他！";
         document.getElementById("changelanguageheader").innerHTML = "言語を変更する";
         document.getElementById("es").style.textDecoration = "none";
         document.getElementById("en").style.textDecoration = "none";
