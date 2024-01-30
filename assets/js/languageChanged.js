@@ -43,7 +43,6 @@ function updateTexts(language)
     {
         //Texts
         document.getElementById("moto").innerHTML = "¡Juegos, herramientas y más!";
-        document.getElementById("changelanguageheader").innerHTML = "Cambiar idioma";
         document.getElementById("es").style.textDecoration = "underline";
         document.getElementById("en").style.textDecoration = "none";
         document.getElementById("ja").style.textDecoration = "none";
@@ -79,7 +78,6 @@ function updateTexts(language)
     {
         //Texts
         document.getElementById("moto").innerHTML = "Games, tools and more!";
-        document.getElementById("changelanguageheader").innerHTML = "Change language";
         document.getElementById("es").style.textDecoration = "none";
         document.getElementById("en").style.textDecoration = "underline";
         document.getElementById("ja").style.textDecoration = "none";
@@ -114,7 +112,6 @@ function updateTexts(language)
     {
         //Texts
         document.getElementById("moto").innerHTML = "ゲーム、ツール、その他！";
-        document.getElementById("changelanguageheader").innerHTML = "言語を変更する";
         document.getElementById("es").style.textDecoration = "none";
         document.getElementById("en").style.textDecoration = "none";
         document.getElementById("ja").style.textDecoration = "underline";
