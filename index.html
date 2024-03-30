@@ -1,3 +1,27 @@
+<!--
+MIT License
+
+Copyright (c) 2024 Abendiix
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,127 +29,420 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Abendiix | Games, tools and more!</title>
-        <meta name="description" content="I'm Abendiix and I make games, tools and anything needed that can change the world bit by bit.">
+        <meta name="description" content="I'm Abendiix and I make games, tools and anything that can change the world, making it a better place for everyone.">
         <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/logos/favicon.svg">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/headers.css">
         <link rel="stylesheet" href="assets/css/projectBox.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
 
-    <body class="font-monospace" style="font-size: 24px;">
-        
-        <!--Container for the header, moto and languages-->
+    <body class="font-monospace" style="font-size: 24px;" id="page">
+
+        <!--Container for the header, moto, languages and modes-->
         <div class="container">
+            
             <!--Header with banner and moto-->
             <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
                 <div style="margin-top: 15px;" class="col-md-6">
+                    
                     <!--Banner-->
                     <h1>
                         <a aria-label="Link to Abendiix's website (where you are now)." href="http://abendiix.com" id="linktothisweb">
-                            <img alt="Abendiix's logo in expanded form. The letters are black and the background of the image is transparent."
-                            src="assets/img/logos/blackBanner.svg" style="max-width: 65%;" id="banner">
+                            <img alt="Abendiix's logo in expanded form. The letters are black and the background of the image is transparent (clear mode)."
+                            src="assets/img/logos/blackBanner.svg" style="max-width: 65%;" id="banner" class="changeableColor">
                         </a>
                     </h1>
+                    <!--Banner-->
 
                     <!--Moto-->
-                    <h2 style="font-size: 1.5vw; margin: 8px; margin-bottom: 15px;" id="moto">Games, tools and more!</h2>
+                    <h2 style="font-size: 1.6vw; margin: 8px;" id="moto">Games, tools and more!</h2>
+                    <!--Moto-->
                 </div>
             </div>
+            <!--Header with banner and moto-->
 
-            <!--Section of the languages available-->
+            <!--Available languages and modes' section-->
             <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <a aria-label="Cambiar el idioma de la web a español." role="button" onclick="changeToES()" id="es">ES</a>
+                    <a aria-label="Cambiar el idioma de la web a español." role="button" onclick="changeToES()" style="font-size: 1.5vw;" id="es">ES</a>
                     ·
-                    <a aria-label="Change website's language to Spanish." role="button" style="text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
+                    <a aria-label="Change website's language to Spanish." role="button" style="font-size: 1.5vw; text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
                     ·
-                    <a aria-label="ウェブサイトの言語を日本語に変更する。" role="button" onclick="changeToJA()" id="ja">日本語</a>
+                    <a aria-label="ウェブサイトの言語を日本語に変更する。" role="button" onclick="changeToJA()" style="font-size: 1.5vw;" id="ja">日本語</a>
+                    |
+                    <a aria-label="Change website colors to clear mode." role="button" onclick="changeToClearMode()" style="font-size: 1.5vw;" id="clearmode">
+                        <img alt="Icon showing a sun for changing the website to clear mode." src="assets/img/icons/sun.svg" style="width: min(25px, 15%);" id="clear" class="changeableColor">
+                    </a>
+                    ·
+                    <a aria-label="Change website colors to dark mode." role="button" onclick="changeToDarkMode()" style="font-size: 1.5vw;" id="darkmode">
+                        <img alt="Icon showing a moon for changing the website to dark mode." src="assets/img/icons/moon.svg" style="width: min(20px, 15%);" id="dark" class="changeableColor">
+                    </a>
+                    <p id="libretranslate" style="font-size: 16px; display: none; margin: 0px">翻訳： <a class="changeableColor" href="https://libretranslate.com/">LibreTranslate</a> | 間違いを通知するには、下記にお問い合わせください</p>
                 </div>
             </div>
-        </div>
+            <!--Available languages and modes' section-->
 
-        <!--Projects' container start-->
+        </div>
+        <!--Container for header, moto, languages and modes-->
+
+        <!--Container for projects' filters-->
+        <div class="container">
+            <h3 id="projectsh3" style="margin: .5rem;"> <p id="projects" style="display: inline;">Projects |</p>
+                <a aria-label="Show every Abendiix's project." role="button" onclick="showAll()" style="font-size: 1.5vw; text-decoration: underline;" id="projectsall">All</a>
+                ·
+                <a aria-label="Show Abendiix's games." role="button" onclick="showGames()" style="font-size: 1.5vw;" id="projectsgames">Games</a>
+                ·
+                <a aria-label="Show Abendiix's tools." role="button" onclick="showTools()" style="font-size: 1.5vw;" id="projectstools">Tools</a>
+                ·
+                <a aria-label="Show Abendiix's art." role="button" onclick="showArt()" style="font-size: 1.5vw;" id="projectsart">Art</a>
+            </h3>
+        </div>
+        <!--Container for projects' filters-->
+
+        <!--Projects' container-->
         <div class="container text-center">
             <div class="row justify-content-center">
                 
-                <!--Project box start-->
-                <div class="projectBox" style="padding: 25px;">
+                <!--Sprites Love box-->
+                <div class="projectBox" id="spriteslove" style="padding: 25px;">
                     <div class="row swing animated" style="border-radius: 10px;margin-top: -15px;margin-bottom: -15px;border-style: solid;">
-                        <div class="col" style="background: #ffffff; border-radius: 10px; padding: 10%;">
+                        <div class="col" style="border-radius: 10px; padding: 10%;">
                             
-                            <!--Project icon-->
-                            <img alt="Logo for the project 'Sprites Love'. It shows a pixelated S from the word 'Sprites' and one pixel down and to the right there's a red pixelated heart representing the word 'Love'."
-                            src="assets/img/spriteslove.svg" style="width: inherit; border-radius: 10px; margin-bottom: 10px; border-style: solid; border-color: #141414; margin-top: 0px;" id="spritesloveicon">
-                            
-                            <!--Project name/title-->
+                            <!--Sprites Love icon-->
+                            <img alt="Logo for the project Sprites Love. It shows a pixelated S from the word 'Sprites' and one pixel down and to the right there's a red pixelated heart representing the word 'Love'."
+                            src="assets/img/logos/spriteslove.svg" style="width: inherit; border-radius: 10px; margin-bottom: 10px; border-style: solid; border-color: #141414; margin-top: 0px;" id="spritesloveicon">
+                            <!--Sprites Love icon-->
+
+                            <!--Sprites Love title-->
                             <h4 style="margin: 0px;" id="sprlv">Sprites Love</h4>
-                            
-                            <!--Project's links-->
+                            <!--Sprites Love title-->
+
+                            <!--Sprites Love's links-->
                             <div class="row text-center">
                                 <div class="col">
 
-                                    <!--Website icon-->
-                                    <a aria-label="Link to 'Sprites Love''s website." href="https://spriteslove.com" target="_blank" id="spriteslovelink">
-                                        <img alt="Black icon that symbolizes a website link with two diagonal chains that redirects to 'Sprites Love''s web."
-                                        src="assets/img/icons/link.svg" style="margin: 4%; width: min(40px, 25%);" id="spriteslovelinkicon">
+                                    <!--Sprites Love icon-->
+                                    <a aria-label="Link to Sprites Love's website." href="https://spriteslove.com" target="_blank" id="spriteslovelink">
+                                        <img alt="Black icon (in clear mode) that symbolizes a website link with two diagonal chains that redirects to Sprites Love's website."
+                                        src="assets/img/icons/link.svg" style="margin: 0%; margin-top: 10%; width: min(40px, 25%);" id="spriteslovelinkicon" class="changeableColor">
                                     </a>
+                                    <!--Sprites Love icon-->
 
                                 </div>
                             </div>
+                            <!--Sprites Love's links-->
 
                         </div>
                     </div>
                 </div>
-                <!--Project box end-->
+                <!--Sprites Love box-->
 
             </div>
         </div>
-        <!--Projects' container start-->
+        <!--Projects' container-->
+
+        <!--Abouts-->
+        <div class="container">
+
+            <!--Abendiix-->
+            <h3 id="aboutabndx">About</h3>
+
+            <details>
+                <summary>Abendiix</summary>
+                <p id="aboutap1" style="text-align: justify;">I'm Abendiix, an indie developer and artist. I make (and tinker with) games, tools and anything that catches my attention, hoping that I can make the world a better place with my projects.</p>
+
+                <p id="aboutap2" style="text-align: justify;">Abendiix is both my developer/artist alias and a project by itself, where I want to pursue the dream and goal of developing ideas, art and projects that are as open, accessible and friendly as I can to everything and everyone that interacts with or is affected and influenced by them.</p>
+
+                <p id="aboutap3" style="text-align: justify;">Abendiix (as in the project) will grow, learn, evolve and change just as much as Abendiix (as in myself) will do, if not more. Abendiix's goal will always be to make the best out of any creation, looking for a positive impact on the people that get to know Abendiix, our planet and anything that surrounds us.</p>
+
+                <p id="aboutap4" style="text-align: justify;">Feel free to contact me about anything you want! Any error/bug/problem that I should fix or solve, any question you may have, showing me anything you want as fanarts or experiences you've had with my projects or even just to say hello or have a chat. I will always be more than grateful and happy to speak and engage with anyone!</p>
+            </details>
+            <!--Abendiix-->
+
+            <!--Projects-->
+            <details>
+                <summary id="projectssummary">Projects</summary>
+                <p id="aboutpp1" style="text-align: justify;">I believe that any creation will always have at least 2 authors (or 2 parts that give sense to that creation). The first one would be the 'original' creator, who comes up with ideas and turns them into a reality. The second one would be who experiences that reality, interpreting it, enjoying it, feeling it and much more, making that reality a whole and giving it its sense of being in the process.</p>
+                
+                <p id="aboutpp2" style="text-align: justify;">Sometimes both of them are just the original creator interacting with their own creation, even if they are still on the process of creating that reality or experiencing it from any perspective.</p>
+
+                <p id="aboutpp3" style="text-align: justify;">Without taking into account this scenario, that relationship between those 2 different authors and that reality has to be as healthy as it can be. Without one of the parts or without one of them not taking the needed care and responsability, that relationship would leave some of the parts feeling like they are being left behind and not taken seriously or as if they didn't matter.</p>
+
+                <p id="aboutpp4" style="text-align: justify;">That relationship should take into account, as much as possible, both authors' backgrounds, situations and needs, with both parts respecting each other and being responsible about how they interact and coexist, to then form that reality that can only come with an equal relationship between both parts.</p>
+
+                <p id="aboutpp5" style="text-align: justify;">Sometimes the original creator could even be that 'second one', where their needs are what give sense and shape to a creation that is needed, and that won't turn into a reality unless someone works on it.</p>
+                
+                <p id="aboutpp6" style="text-align: justify;">My projects would lack their purpose if they weren't benefitial in any kind of way in a healthy and coherent manner to any of the parts involved. I want to make everyone feel welcomed to enjoy, engage and share anything related with Abendiix and its projects in every kind of way. Even better, those experiences with Abendiix's project may lead to many other creations and realities that people will be able to experience, where ideas, feelings and so much more will interact, coexist and create so many more creations.</p>
+
+                <p id="aboutpp7" style="text-align: justify;">The creative process and the need for people to express themselves and be heard is not something that should nor can be controlled or stopped. From the people that want to have fun and share with others the joy they feel with other's creations, to those who want to claim who they are, vindicate about any aspect of their life or any kind of movement.</p>
+
+                <p id="aboutpp8" style="text-align: justify;">There are some obvious legal limitations but I talk about that need to create and feel that sometimes can't just be let go, so I want and will work to make my creations as open, free and accesible as I can, so anyone can squeeze the most out of them in every sense and way possible.</p>
+
+                <p id="aboutpp9" style="text-align: justify;">This words are just thoughts that cross my mind from time to time when experiencing other people's creation and a result of how all of them make me feel and how I would like my projects and creations to be. I want to make projects and creations that do not limit people's creativity and desire to enjoy and fully experience anything that I make. I want to make people feel as much freedom as they can when coming across Abendiix and its projects. I want to learn more about everything and everyone, make projects and creations that me and other people will love and have fun with (and let's hope making a living 🤞) in the process.</p>
+
+                <p id="aboutpp10" style="text-align: justify;">PS: This is just <b>my</b> actual way of looking at how I want to create <b>my own</b> projects and art, that may or may not change in the future and/or as I create them (and not something I stubbornly expect from anyone or any project; everyone is and should aim to be different). I will make errors and I'm open to talk about them and improve my projects and myself. Feel free to always reach me out! ^^.</p>
+
+                <div class="container text-justified">
+                    <div class="row justify-content-center">
+                        
+                        <div style="width: 50%; padding: 25px;">
+                            <h2 id="projectssoftwaretitle">Software</h2>
+                            <p id="aboutpsp1" style="text-align: justify;">All of Abendiix's software will always be open source and available to everyone and anyone. There will sometimes be cases where the code may not be available, such as releasing a videogame into a platform with private code from the platform's company. In this cases there will always be an equivalent project where all the code is freely available (think of it like a PC and console release, where there may be some private modules for consoles but not for PC, where I can make the code fully open source).</p>
+                            
+                            <p id="aboutpsp2" style="text-align: justify;">Abendiix's software will always have it's corresponding license and copyright claim to not left out any doubts on its usage.</p>
+                        </div>
+
+                        <div style="width: 50%; padding: 25px;">
+                            <h2 id="projectsarttitle">Art</h2>
+                            <p id="aboutpap1" style="text-align: justify;">All of Abendiix's art will follow a similar approach to Abendiix's software, being always freely (as in freedom, since there will be some cases where it won't be completely free) available and open for usage to anyone.</p>
+                            
+                            <p id="aboutpap2" style="text-align: justify;">Every work of art will have it's corresponding license and copyright claim to not left out any doubts on its usage.</p>
+
+                            <p id="aboutpap3" style="text-align: justify;">There will sometimes be more restrictive licenses and copyright claims to avoid cases where the art is used/sold in a non-healthy/toxic way to any of the parties involved.</p>
+                            
+                            <p id="aboutpap4" style="text-align: justify;">At the same time, this licenses, copyright claims and restrictions will never aim to go against and harm anyone or their creative process (such as making fan-art, selling merchandising and pretty much anything). I want everyone to feel welcomed to share their passion and not restrict them on the process (and I'll be more than happy to see what people share about my projects :D).</p>
+                        </div>
+
+                    </div>
+                </div>
+            </details>
+            <!--Projects-->
+
+        </div>
+        <!--Abouts-->
+
+        <!--Presskits-->
+        <div class="container" style="margin-top: 4vh">
+            <h3 id="presskits">Presskits</h3>
+            
+            <!--Abendiix's presskit-->
+            <details>
+                <summary>Abendiix</summary>
+
+                <a id="abendiixzip" class="changeableColor" aria-label="Zip file with Abendiix's logo and banner in clear and dark mode, svg and png format and in 128, 256 and 512 pixels." href="assets/presskits/abendiix/Presskit_Abendiix.zip" download>Download everything</a>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="logodark">Logo (dark version)</h4>
+                    <img id="logodarkthumbnail" alt="Abendiix's dark logo that serves as a thumbnail." src="assets/presskits/abendiix/SVG/logo_128_dark.svg">
+                    <a id="logodark128svg" aria-label="Download Abendiix's logo, dark mode, svg, 128 pixels." href="assets/presskits/abendiix/SVG/logo_128_dark.svg" download class="changeableColor">128 (SVG)</a>
+                    <a id="logodark256svg" aria-label="Download Abendiix's logo, dark mode, svg, 256 pixels." href="assets/presskits/abendiix/SVG/logo_256_dark.svg" download class="changeableColor">256 (SVG)</a>
+                    <a id="logodark512svg" aria-label="Download Abendiix's logo, dark mode, svg, 512 pixels." href="assets/presskits/abendiix/SVG/logo_512_dark.svg" download class="changeableColor">512 (SVG)</a>
+                    <a id="logodark128png" aria-label="Download Abendiix's logo, dark mode, png, 128 pixels." href="assets/presskits/abendiix/PNG/logo_128_dark.png" download class="changeableColor">128 (PNG)</a>
+                    <a id="logodark256png" aria-label="Download Abendiix's logo, dark mode, png, 256 pixels." href="assets/presskits/abendiix/PNG/logo_256_dark.png" download class="changeableColor">256 (PNG)</a>
+                    <a id="logodark512png" aria-label="Download Abendiix's logo, dark mode, png, 512 pixels." href="assets/presskits/abendiix/PNG/logo_512_dark.png" download class="changeableColor">512 (PNG)</a>
+                </div>
+                
+                <div class="container" style="margin: 8px;">
+                    <h4 id="logoclear">Logo (clear version)</h4>
+                    <img id="logoclearthumbnail" alt="Abendiix's clear logo that serves as a thumbnail." src="assets/presskits/abendiix/SVG/logo_128_clear.svg" style="border: solid 2px;">
+                    <a id="logoclear128svg" aria-label="Download Abendiix's logo, clear mode, svg, 128 pixels." href="assets/presskits/abendiix/SVG/logo_128_clear.svg" download class="changeableColor">128 (SVG)</a>
+                    <a id="logoclear256svg" aria-label="Download Abendiix's logo, clear mode, svg, 256 pixels." href="assets/presskits/abendiix/SVG/logo_256_clear.svg" download class="changeableColor">256 (SVG)</a>
+                    <a id="logoclear512svg" aria-label="Download Abendiix's logo, clear mode, svg, 512 pixels." href="assets/presskits/abendiix/SVG/logo_512_clear.svg" download class="changeableColor">512 (SVG)</a>
+                    <a id="logoclear128png" aria-label="Download Abendiix's logo, clear mode, png, 128 pixels." href="assets/presskits/abendiix/PNG/logo_128_clear.png" download class="changeableColor">128 (PNG)</a>
+                    <a id="logoclear256png" aria-label="Download Abendiix's logo, clear mode, png, 256 pixels." href="assets/presskits/abendiix/PNG/logo_256_clear.png" download class="changeableColor">256 (PNG)</a>
+                    <a id="logoclear512png" aria-label="Download Abendiix's logo, clear mode, png, 512 pixels." href="assets/presskits/abendiix/PNG/logo_512_clear.png" download class="changeableColor">512 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="bannerdark">Banner (dark version)</h4>
+                    <img id="bannerdarkthumbnail" alt="Abendiix's dark banner that serves as a thumbnail." src="assets/presskits/abendiix/SVG/banner_128_dark.svg">
+                    <a id="bannerdark128svg" aria-label="Download Abendiix's banner, dark mode, svg, 128 pixels." href="assets/presskits/abendiix/SVG/banner_128_dark.svg" download class="changeableColor">128 (SVG)</a>
+                    <a id="bannerdark256svg" aria-label="Download Abendiix's banner, dark mode, svg, 256 pixels." href="assets/presskits/abendiix/SVG/banner_256_dark.svg" download class="changeableColor">256 (SVG)</a>
+                    <a id="bannerdark512svg" aria-label="Download Abendiix's banner, dark mode, svg, 512 pixels." href="assets/presskits/abendiix/SVG/banner_512_dark.svg" download class="changeableColor">512 (SVG)</a>
+                    <a id="bannerdark128png" aria-label="Download Abendiix's banner, dark mode, png, 128 pixels." href="assets/presskits/abendiix/PNG/banner_128_dark.png" download class="changeableColor">128 (PNG)</a>
+                    <a id="bannerdark256png" aria-label="Download Abendiix's banner, dark mode, png, 256 pixels." href="assets/presskits/abendiix/PNG/banner_256_dark.png" download class="changeableColor">256 (PNG)</a>
+                    <a id="bannerdark512png" aria-label="Download Abendiix's banner, dark mode, png, 512 pixels." href="assets/presskits/abendiix/PNG/banner_512_dark.png" download class="changeableColor">512 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="bannerclear">Banner (clear version)</h4>
+                    <img id="bannerclearthumbnail" alt="Abendiix's clear banner that serves as a thumbnail." src="assets/presskits/abendiix/SVG/banner_128_clear.svg" style="border: solid 2px;">
+                    <a id="bannerclear128svg" aria-label="Download Abendiix's banner, clear mode, svg, 128 pixels." href="assets/presskits/abendiix/SVG/banner_128_clear.svg" download class="changeableColor">128 (SVG)</a>
+                    <a id="bannerclear256svg" aria-label="Download Abendiix's banner, clear mode, svg, 256 pixels." href="assets/presskits/abendiix/SVG/banner_256_clear.svg" download class="changeableColor">256 (SVG)</a>
+                    <a id="bannerclear512svg" aria-label="Download Abendiix's banner, clear mode, svg, 512 pixels." href="assets/presskits/abendiix/SVG/banner_512_clear.svg" download class="changeableColor">512 (SVG)</a>
+                    <a id="bannerclear128png" aria-label="Download Abendiix's banner, clear mode, png, 128 pixels." href="assets/presskits/abendiix/PNG/banner_128_clear.png" download class="changeableColor">128 (PNG)</a>
+                    <a id="bannerclear256png" aria-label="Download Abendiix's banner, clear mode, png, 256 pixels." href="assets/presskits/abendiix/PNG/banner_256_clear.png" download class="changeableColor">256 (PNG)</a>
+                    <a id="bannerclear512png" aria-label="Download Abendiix's banner, clear mode, png, 512 pixels." href="assets/presskits/abendiix/PNG/banner_512_clear.png" download class="changeableColor">512 (PNG)</a>
+                </div>
+
+            </details>
+            <!--Abendiix's presskit-->
+            
+            <!--Sprites Love's presskit-->
+            <details>
+                <summary>Sprites Love</summary>
+                
+                <a id="spriteslovezip" class="changeableColor" aria-label="Zip file with Sprites Love's different logos with 1 to 1 ratio and 1 to 10 ratio (in pixels), in svg and png format." href="assets/presskits/spriteslove/Presskit_SpritesLove.zip" download>Download everything</a>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="spriteslovemain">Main logo</h4>
+                    <img id="spriteslovemainthumbnail" alt="Sprites Love's main logo that serves as a thumbnail." src="assets/presskits/spriteslove/SVG/spriteslove_logo_original_x10.svg" style="border: solid white 10px; background-color: white; border-radius: 4px;">
+                    <a id="spriteslovemain1-1svg"  aria-label="Download Sprites Love's main logo, 1 to 1 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_original.svg" download class="changeableColor">1:1 (SVG)</a>
+                    <a id="spriteslovemain1-10svg" aria-label="Download Sprites Love's main logo, 1 to 10 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_original_x10.svg" download class="changeableColor">1:10 (SVG)</a>
+                    <a id="spriteslovemain1-1png"  aria-label="Download Sprites Love's main logo, 1 to 1 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_original.png" download class="changeableColor">1:1 (PNG)</a>
+                    <a id="spriteslovemain1-10png" aria-label="Download Sprites Love's main logo, 1 to 10 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_original_x10.png" download class="changeableColor">1:10 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="spriteslovesquare">Square logo</h4>
+                    <img id="spriteslovesquarethumbnail" alt="Sprites Love's square logo that serves as a thumbnail." src="assets/presskits/spriteslove/SVG/spriteslove_logo_square_x10.svg" style="border: solid white 10px; background-color: white; border-radius: 4px;">
+                    <a id="spriteslovesquare1-1svg"  aria-label="Download Sprites Love's square logo, 1 to 1 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_square.svg" download class="changeableColor">1:1 (SVG)</a>
+                    <a id="spriteslovesquare1-10svg" aria-label="Download Sprites Love's square logo, 1 to 10 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_square_x10.svg" download class="changeableColor">1:10 (SVG)</a>
+                    <a id="spriteslovesquare1-1png"  aria-label="Download Sprites Love's square logo, 1 to 1 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_square.png" download class="changeableColor">1:1 (PNG)</a>
+                    <a id="spriteslovesquare1-10png" aria-label="Download Sprites Love's square logo, 1 to 10 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_square_x10.png" download class="changeableColor">1:10 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="spritesloveshort">Short logo</h4>
+                    <img id="spritesloveshortthumbnail" alt="Sprites Love's short logo that serves as a thumbnail." src="assets/presskits/spriteslove/SVG/spriteslove_logo_short_x10.svg" style="border: solid white 10px; background-color: white; border-radius: 4px;">
+                    <a id="spritesloveshort1-1svg"  aria-label="Download Sprites Love's short logo, 1 to 1 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_short.svg" download class="changeableColor">1:1 (SVG)</a>
+                    <a id="spritesloveshort1-10svg" aria-label="Download Sprites Love's short logo, 1 to 10 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_short_x10.svg" download class="changeableColor">1:10 (SVG)</a>
+                    <a id="spritesloveshort1-1png"  aria-label="Download Sprites Love's short logo, 1 to 1 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_short.png" download class="changeableColor">1:1 (PNG)</a>
+                    <a id="spritesloveshort1-10png" aria-label="Download Sprites Love's short logo, 1 to 10 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_short_x10.png" download class="changeableColor">1:10 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="spriteslovelong">Long logo</h4>
+                    <img id="spriteslovelongthumbnail" alt="Sprites Love's long logo that serves as a thumbnail." src="assets/presskits/spriteslove/SVG/spriteslove_logo_long_x10.svg" style="border: solid white 10px; background-color: white; border-radius: 4px;">
+                    <a id="spriteslovelong1-1svg"  aria-label="Download Sprites Love's long logo, 1 to 1 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_long.svg" download class="changeableColor">1:1 (SVG)</a>
+                    <a id="spriteslovelong1-10svg" aria-label="Download Sprites Love's long logo, 1 to 10 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_long_x10.svg" download class="changeableColor">1:10 (SVG)</a>
+                    <a id="spriteslovelong1-1png"  aria-label="Download Sprites Love's long logo, 1 to 1 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_long.png" download class="changeableColor">1:1 (PNG)</a>
+                    <a id="spriteslovelong1-10png" aria-label="Download Sprites Love's long logo, 1 to 10 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_long_x10.png" download class="changeableColor">1:10 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="spriteslovebig">Big logo</h4>
+                    <img id="spriteslovebigthumbnail" alt="Sprites Love's big logo that serves as a thumbnail." src="assets/presskits/spriteslove/SVG/spriteslove_logo_big_x10.svg" style="border: solid white 10px; background-color: white; border-radius: 4px;">
+                    <a id="spriteslovebig1-1svg"  aria-label="Download Sprites Love's big logo, 1 to 1 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_big.svg" download class="changeableColor">1:1 (SVG)</a>
+                    <a id="spriteslovebig1-10svg" aria-label="Download Sprites Love's big logo, 1 to 10 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_big_x10.svg" download class="changeableColor">1:10 (SVG)</a>
+                    <a id="spriteslovebig1-1png"  aria-label="Download Sprites Love's big logo, 1 to 1 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_big.png" download class="changeableColor">1:1 (PNG)</a>
+                    <a id="spriteslovebig1-10png" aria-label="Download Sprites Love's big logo, 1 to 10 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_big_x10.png" download class="changeableColor">1:10 (PNG)</a>
+                </div>
+
+                <div class="container" style="margin: 8px;">
+                    <h4 id="spritesloveheart">Heart logo</h4>
+                    <img id="spritesloveheartthumbnail" alt="Sprites Love's heart logo that serves as a thumbnail." src="assets/presskits/spriteslove/SVG/spriteslove_logo_heart_x10.svg" style="border: solid white 10px; background-color: white; border-radius: 4px;">
+                    <a id="spritesloveheart1-1svg"  aria-label="Download Sprites Love's heart logo, 1 to 1 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_heart.svg" download class="changeableColor">1:1 (SVG)</a>
+                    <a id="spritesloveheart1-10svg" aria-label="Download Sprites Love's heart logo, 1 to 10 pixel ratio, svg." href="assets/presskits/spriteslove/SVG/spriteslove_logo_heart_x10.svg" download class="changeableColor">1:10 (SVG)</a>
+                    <a id="spritesloveheart1-1png"  aria-label="Download Sprites Love's heart logo, 1 to 1 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_heart.png" download class="changeableColor">1:1 (PNG)</a>
+                    <a id="spritesloveheart1-10png" aria-label="Download Sprites Love's heart logo, 1 to 10 pixel ratio, png." href="assets/presskits/spriteslove/PNG/spriteslove_logo_heart_x10.png" download class="changeableColor">1:10 (PNG)</a>
+                </div>
+
+            </details>
+            <!--Sprites Love's presskit-->
+
+        </div>
+        <!--Presskits-->
 
         <!--Section for external sites-->
         <div class="text-center" style="margin: 2vh; margin-top: 2vh;">
-            <!--ko-fi icon-->
-            <a aria-label="Link to Abendiix's Ko-fi" href="https://ko-fi.com/abendiix" target="_blank" id="ko-filink">
-                <img alt="Black icon for Ko-fi that redirects to Abendiix's profile."
-                src="assets/img/icons/ko-fi.svg" style="width: min(50px, 25%);" id="ko-fi"></a>
-            ·
-            <!--github icon-->
-            <a aria-label="Link to Abendiix's GitHub" href="https://github.com/Abendiix" target="_blank" id="githublink">
-                <img alt="Black icon for GitHub that redirects to Abendiix's profile."
-                src="assets/img/icons/github.svg" style="width: min(40px, 15%);" id="github"></a>
-            ·
-            <!--itchio icon-->
-            <a aria-label="Link to Abendiix's itch.io" href="https://abendiix.itch.io/" target="_blank" id="itchiolink">
-                <img alt="Black icon for itch.io that redirects to Abendiix's profile."
-                src="assets/img/icons/itch-io.svg" style="width: min(40px, 15%);" id="itchio"></a>
-            ·
-            <!--twitter icon-->
-            <a aria-label="Link to Abendiix's Twitter" href="https://twitter.com/Abendiix" target="_blank" id="twitterlink">
-                <img alt="Black icon for Twitter that redirects to Abendiix's profile."
-                src="assets/img/icons/x-twitter.svg" style="width: min(40px, 15%);" id="twitter">
-            </a>
+            <div class="container text-justified">
+                <div class="row justify-content-center">
+                    
+                    <!--Tips' section-->
+                    <div style="width: 33%; padding: 25px;">
+                        
+                        <h4 id="tips">Tips</h4>
+                        
+                        <!--ko-fi-->
+                        <a aria-label="Link to Abendiix's Ko-fi." href="https://ko-fi.com/abendiix" target="_blank" id="ko-filink">
+                            <img alt="Ko-fi icon in black (clear mode) that redirects to Abendiix's profile."
+                            src="assets/img/icons/ko-fi.svg" style="width: min(50px, 25%);" id="ko-fi" class="changeableColor">
+                        </a>
+                        <!--ko-fi-->
+
+                    </div>
+                    <!--Tips' section-->
+
+                    <!--Code and releases' section-->
+                    <div style="width: 33%; padding: 25px;">
+                        
+                        <h4 id="c&r">Code and releases</h4>
+                        
+                        <!--github-->
+                        <a aria-label="Link to Abendiix's GitHub." href="https://github.com/Abendiix" target="_blank" id="githublink">
+                            <img alt="GitHub icon in black (clear mode) that redirects to Abendiix's profile."
+                            src="assets/img/icons/github.svg" style="width: min(40px, 15%);" id="github" class="changeableColor"></a>
+                        <!--github-->
+
+                        ·
+                        <!--itchio-->
+                        <a aria-label="Link to Abendiix's itch.io." href="https://abendiix.itch.io/" target="_blank" id="itchiolink">
+                            <img alt="itch.io icon in black (clear mode) that redirects to Abendiix's profile."
+                            src="assets/img/icons/itch-io.svg" style="width: min(40px, 15%);" id="itchio" class="changeableColor"></a>
+                        <!--itchio-->
+
+                        ·
+
+                        <!--playstore-->
+                        <a aria-label="Link to Abendiix's Play Store." href="https://play.google.com/store/apps/dev?id=7622051480486379566" target="_blank" id="playstorelink">
+                            <img alt="Play Store icon in black (clear mode) that redirects to Abendiix's profile."
+                            src="assets/img/icons/google-play.svg" style="width: min(40px, 15%);" id="playstore" class="changeableColor">
+                        </a>
+                        <!--playstore-->
+
+                    </div>
+                    <!--Code and releases' section-->
+
+                    <!--Socials' section-->
+                    <div style="width: 33%; padding: 25px;">
+                        
+                        <h4 id="socials">Socials</h4>
+                        
+                        <!--twitter-->
+                        <a aria-label="Link to Abendiix's Twitter." href="https://twitter.com/Abendiix" target="_blank" id="twitterlink">
+                            <img alt="Twitter icon in black (clear mode) that redirects to Abendiix's profile."
+                            src="assets/img/icons/x-twitter.svg" style="width: min(40px, 15%);" id="twitter" class="changeableColor"></a>
+                        <!--twitter-->
+
+                        ·
+
+                        <!--bluesky-->
+                        <a aria-label="Link to Abendiix's Bluesky." href="https://bsky.app/profile/abendiix.bsky.social" target="_blank" id="blueskylink">
+                            <img alt="Bluesky icon in black (clear mode) that redirects to Abendiix's profile."
+                            src="assets/img/icons/bluesky.svg" style="width: min(40px, 15%);" id="bluesky" class="changeableColor">
+                        </a>
+                        <!--bluesky-->
+
+                    </div>
+                    <!--Socials' section-->
+
+                </div>
+            </div>
         </div>
+        <!--Section for external sites-->
 
         <!--Contact section-->
-        <div class="text-center" style="margin: 2vh; margin-bottom: 1023%;">
-            <h3 style="margin: 8px; color: #141414;" id="contact">Contact via email</h3>
-            <a aria-label="Copy Abendiix's contact email to clipboard." role="button" style="color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy">Copy</a>
-            <a aria-label="Open email app by default to contact Abendiix." href="mailto:contact@abendiix.com" style="color: #141414; margin: 10px;" id="openApp">Open app</a>
+        <div class="text-center" style="margin: 2vh;">
+            <h3 style="font-size: 1.6vw; margin: 8px;" id="contact">Contact via email</h3>
+            <a aria-label="Copy Abendiix's contact email to clipboard." role="button" style="font-size: 1.5vw; color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy" class="changeableColor">Copy</a>
+            <a aria-label="Open email app by default to contact Abendiix." href="mailto:contact@abendiix [.] com" style="font-size: 1.5vw; color: #141414; margin: 10px;" id="openApp" class="changeableColor">Open app</a>
         </div>
+        <!--Contact section-->
+
+        <!--Copyright notice-->
+        <div class="text-center" style="margin-bottom: 224%; font-size: 1vw;">
+            © 2019-2024 Abendiix - <a aria-label="Link to Creative Commons page about CC0." href="https://creativecommons.org/publicdomain/zero/1.0/" id="cc0" class="changeableColor">CC0 1.0</a>
+            <br>
+            © 2023 Fonticos, Inc (<a aria-label="Link to Font Awesome's page." href="https://fontawesome.com/" id="fontAwe" class="changeableColor">Font Awesome</a>) 
+        </div>
+        <!--Copyright notice-->
 
         <!--Emoti gag-->
         <div aria-label="Small gag about a emoti-like text throwing randomly generated food emojis." id="emotigag">
             <p id="emotiText">You found me!</p>
-            <p id="emoti"></p>
+            <p aria-label="Multiple characters arranged to look like a happy face throwing stars and a random food emoji." id="emoti">(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ </p>
         </div>
+        <!--Emoti gag-->
 
         <!--Scripts-->
         <script src="assets/js/copyToClipboardScript.js"></script>
         <script src="assets/js/emoti.js"></script>
         <script src="assets/js/languageChanged.js"></script>
+        <script src="assets/js/clearAndDark.js"></script>
+        <script src="assets/js/visibility.js"></script>
+        <!--Scripts-->
 
     </body>
-
 </html>
