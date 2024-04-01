@@ -56,7 +56,7 @@ SOFTWARE.
                     <!--Banner-->
 
                     <!--Moto-->
-                    <h2 style="font-size: 1.6vw; margin: 8px;" id="moto">Games, tools and more!</h2>
+                    <h2 style="margin: 8px;" id="moto">Games, tools and more!</h2>
                     <!--Moto-->
                 </div>
             </div>
@@ -65,20 +65,20 @@ SOFTWARE.
             <!--Available languages and modes' section-->
             <div class="row font-monospace text-center d-flex d-xl-flex justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <a aria-label="Cambiar el idioma de la web a español." role="button" onclick="changeToES()" style="font-size: 1.5vw;" id="es">ES</a>
-                    ·
-                    <a aria-label="Change website's language to Spanish." role="button" style="font-size: 1.5vw; text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
-                    ·
-                    <a aria-label="ウェブサイトの言語を日本語に変更する。" role="button" onclick="changeToJA()" style="font-size: 1.5vw;" id="ja">日本語</a>
+                    <a aria-label="Cambiar el idioma de la web a español." role="button" onclick="changeToES()" id="es">ES</a>
+
+                    <a aria-label="Change website's language to Spanish." role="button" style="text-decoration: underline;" onclick="changeToEN()" id="en">ENG</a>
+
+                    <a aria-label="ウェブサイトの言語を日本語に変更する。" role="button" onclick="changeToJA()" id="ja">日本語</a>
                     |
-                    <a aria-label="Change website colors to clear mode." role="button" onclick="changeToClearMode()" style="font-size: 1.5vw;" id="clearmode">
+                    <a aria-label="Change website colors to clear mode." role="button" onclick="changeToClearMode()" id="clearmode">
                         <img alt="Icon showing a sun for changing the website to clear mode." src="assets/img/icons/sun.svg" style="width: min(25px, 15%);" id="clear" class="changeableColor">
                     </a>
-                    ·
-                    <a aria-label="Change website colors to dark mode." role="button" onclick="changeToDarkMode()" style="font-size: 1.5vw;" id="darkmode">
+
+                    <a aria-label="Change website colors to dark mode." role="button" onclick="changeToDarkMode()" id="darkmode">
                         <img alt="Icon showing a moon for changing the website to dark mode." src="assets/img/icons/moon.svg" style="width: min(20px, 15%);" id="dark" class="changeableColor">
                     </a>
-                    <p id="libretranslate" style="font-size: 16px; display: none; margin: 0px">翻訳： <a class="changeableColor" href="https://libretranslate.com/">LibreTranslate</a> | 間違いを通知するには、下記にお問い合わせください</p>
+                    <p id="libretranslate" style="display: none; margin: 0px">翻訳： <a class="changeableColor" href="https://libretranslate.com/">LibreTranslate</a> | 間違いを通知するには、下記にお問い合わせください</p>
                 </div>
             </div>
             <!--Available languages and modes' section-->
@@ -89,13 +89,13 @@ SOFTWARE.
         <!--Container for projects' filters-->
         <div class="container">
             <h3 id="projectsh3" style="margin: .5rem;"> <p id="projects" style="display: inline;">Projects |</p>
-                <a aria-label="Show every Abendiix's project." role="button" onclick="showAll()" style="font-size: 1.5vw; text-decoration: underline;" id="projectsall">All</a>
-                ·
-                <a aria-label="Show Abendiix's games." role="button" onclick="showGames()" style="font-size: 1.5vw;" id="projectsgames">Games</a>
-                ·
-                <a aria-label="Show Abendiix's tools." role="button" onclick="showTools()" style="font-size: 1.5vw;" id="projectstools">Tools</a>
-                ·
-                <a aria-label="Show Abendiix's art." role="button" onclick="showArt()" style="font-size: 1.5vw;" id="projectsart">Art</a>
+                <a aria-label="Show every Abendiix's project." role="button" onclick="showAll()" style="text-decoration: underline; margin-right: 10px;" id="projectsall">All</a>
+
+                <a aria-label="Show Abendiix's games." role="button" onclick="showGames()" id="projectsgames" style="margin-right: 10px;">Games</a>
+
+                <a aria-label="Show Abendiix's tools." role="button" onclick="showTools()" id="projectstools"style="margin-right: 10px;">Tools</a>
+
+                <a aria-label="Show Abendiix's art." role="button" onclick="showArt()" id="projectsart">Art</a>
             </h3>
         </div>
         <!--Container for projects' filters-->
@@ -348,7 +348,7 @@ SOFTWARE.
                         <!--ko-fi-->
                         <a aria-label="Link to Abendiix's Ko-fi." href="https://ko-fi.com/abendiix" target="_blank" id="ko-filink">
                             <img alt="Ko-fi icon in black (clear mode) that redirects to Abendiix's profile."
-                            src="assets/img/icons/ko-fi.svg" style="width: min(50px, 25%);" id="ko-fi" class="changeableColor">
+                            src="assets/img/icons/ko-fi.svg" style="width: min(4.5vw, 25%)" id="ko-fi" class="changeableColor">
                         </a>
                         <!--ko-fi-->
 
@@ -363,22 +363,19 @@ SOFTWARE.
                         <!--github-->
                         <a aria-label="Link to Abendiix's GitHub." href="https://github.com/Abendiix" target="_blank" id="githublink">
                             <img alt="GitHub icon in black (clear mode) that redirects to Abendiix's profile."
-                            src="assets/img/icons/github.svg" style="width: min(40px, 15%);" id="github" class="changeableColor"></a>
+                            src="assets/img/icons/github.svg" style="width:min(3.5vw, 20%)" id="github" class="changeableColor"></a>
                         <!--github-->
 
-                        ·
                         <!--itchio-->
                         <a aria-label="Link to Abendiix's itch.io." href="https://abendiix.itch.io/" target="_blank" id="itchiolink">
                             <img alt="itch.io icon in black (clear mode) that redirects to Abendiix's profile."
-                            src="assets/img/icons/itch-io.svg" style="width: min(40px, 15%);" id="itchio" class="changeableColor"></a>
+                            src="assets/img/icons/itch-io.svg" style="margin-left: 10px; width: min(3.75vw, 23%)" id="itchio" class="changeableColor"></a>
                         <!--itchio-->
-
-                        ·
 
                         <!--playstore-->
                         <a aria-label="Link to Abendiix's Play Store." href="https://play.google.com/store/apps/dev?id=7622051480486379566" target="_blank" id="playstorelink">
                             <img alt="Play Store icon in black (clear mode) that redirects to Abendiix's profile."
-                            src="assets/img/icons/google-play.svg" style="width: min(40px, 15%);" id="playstore" class="changeableColor">
+                            src="assets/img/icons/google-play.svg" style="margin-left: 10px; width: min(3.5vw, 20%)" id="playstore" class="changeableColor">
                         </a>
                         <!--playstore-->
 
@@ -393,15 +390,13 @@ SOFTWARE.
                         <!--twitter-->
                         <a aria-label="Link to Abendiix's Twitter." href="https://twitter.com/Abendiix" target="_blank" id="twitterlink">
                             <img alt="Twitter icon in black (clear mode) that redirects to Abendiix's profile."
-                            src="assets/img/icons/x-twitter.svg" style="width: min(40px, 15%);" id="twitter" class="changeableColor"></a>
+                            src="assets/img/icons/x-twitter.svg" style="width: min(3.5vw, 20%);" id="twitter" class="changeableColor"></a>
                         <!--twitter-->
-
-                        ·
 
                         <!--bluesky-->
                         <a aria-label="Link to Abendiix's Bluesky." href="https://bsky.app/profile/abendiix.com" target="_blank" id="blueskylink">
                             <img alt="Bluesky icon in black (clear mode) that redirects to Abendiix's profile."
-                            src="assets/img/icons/bluesky.svg" style="width: min(40px, 15%);" id="bluesky" class="changeableColor">
+                            src="assets/img/icons/bluesky.svg" style="margin-left: 10px; width: min(3.5vw, 20%);" id="bluesky" class="changeableColor">
                         </a>
                         <!--bluesky-->
 
@@ -415,14 +410,14 @@ SOFTWARE.
 
         <!--Contact section-->
         <div class="text-center" style="margin: 2vh;">
-            <h3 style="font-size: 1.6vw; margin: 8px;" id="contact">Contact via email</h3>
-            <a aria-label="Copy Abendiix's contact email to clipboard." role="button" style="font-size: 1.5vw; color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy" class="changeableColor">Copy</a>
-            <a aria-label="Open email app by default to contact Abendiix." href="mailto:contact@abendiix [.] com" style="font-size: 1.5vw; color: #141414; margin: 10px;" id="openApp" class="changeableColor">Open app</a>
+            <h3 style="margin: 8px;" id="contact">Contact via email</h3>
+            <a aria-label="Copy Abendiix's contact email to clipboard." role="button" style="color: #141414; margin: 10px; text-decoration: underline;" onclick="copyEmail()" id="copy" class="changeableColor">Copy</a>
+            <a aria-label="Open email app by default to contact Abendiix." href="mailto:contact@abendiix [.] com" style="color: #141414; margin: 10px;" id="openApp" class="changeableColor">Open app</a>
         </div>
         <!--Contact section-->
 
         <!--Copyright notice-->
-        <div class="text-center" style="margin-bottom: 224%; font-size: 1vw;">
+        <div class="text-center" style="margin-bottom: 224%;">
             © 2019-2024 Abendiix - <a aria-label="Link to Creative Commons page about CC0." href="https://creativecommons.org/publicdomain/zero/1.0/" id="cc0" class="changeableColor">CC0 1.0</a>
             <br>
             © 2023 Fonticos, Inc (<a aria-label="Link to Font Awesome's page." href="https://fontawesome.com/" id="fontAwe" class="changeableColor">Font Awesome</a>) 
