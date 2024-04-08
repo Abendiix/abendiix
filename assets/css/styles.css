@@ -49,7 +49,7 @@ a:hover
 }
 
 a img:hover{
-  /*Filter thanks to: https://codepen.io/sosuke/pen/Pjoqqp*/
+  /*Filter thanks to: https://github.com/angel-rs/css-color-filter-generator*/
   filter: invert(51%) sepia(9%) saturate(0%) hue-rotate(175deg) brightness(96%) contrast(84%) !important;
 }
 
