@@ -102,6 +102,18 @@ function updateTexts(language)
         document.getElementById("sprlv").innerHTML = "Sprites Love";
         document.getElementById("spriteslovelink").ariaLabel = "Enlace a la página de Sprites Love.";
         document.getElementById("spriteslovelinkicon").alt = "Icono negro que simboliza un enlace web con dos cadenas en diagonal que redirige a la web de Sprites Love.";
+        
+        //Trom
+        document.getElementById("tromicon").alt = "Logo del proyecto Trom. Muestra una trompeta hecha en pixel art que viene del propio juego.";
+        document.getElementById("trm").innerHTML = "Trom";
+        document.getElementById("tromlinkplaystore").ariaLabel = "Enlace a la página de Play Store de Trom.";
+        document.getElementById("tromlinkplaystoreicon").alt = "Icono negro de Play Store que redirige a la página de Trom.";
+        
+        //Fonts
+        document.getElementById("fonts").alt = "Logo para las fuentes de Abendiix. Muestra una A mayúscula y una a minúscula en estilo pixel art.";
+        document.getElementById("fnts").innerHTML = "Fuentes";
+        document.getElementById("fontslink").ariaLabel = "Enlace a la página web de fuentes de Abendiix.";
+        document.getElementById("fontslinkicon").alt = "Icono negro que simboliza un enlace web con dos cadenas en diagonal que redirige a la página web de fuentes de Abendiix.";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "Sobre";
@@ -297,6 +309,18 @@ function updateTexts(language)
         document.getElementById("sprlv").innerHTML = "Sprites Love";
         document.getElementById("spriteslovelink").ariaLabel = "Link to Sprites Love's website.";
         document.getElementById("spriteslovelinkicon").alt = "Black icon that symbolizes a website link with two diagonal chains that redirects to Sprites Love's website.";
+        
+        //Trom
+        document.getElementById("tromicon").alt = "Logo for the project Trom. It shows a trumpet made with pixel art that comes from the game.";
+        document.getElementById("trm").innerHTML = "Trom";
+        document.getElementById("tromlinkplaystore").ariaLabel = "Link to Trom's Play Store page.";
+        document.getElementById("tromlinkplaystoreicon").alt = "Play Store icon in black (clear mode) that redirects to Trom's Play Store page.";
+        
+        //Fonts
+        document.getElementById("fonts").alt = "Logo for Abendiix's fonts. It shows a upper case A and a lower case a in pixel art style.";
+        document.getElementById("fnts").innerHTML = "Fonts";
+        document.getElementById("fontslink").ariaLabel = "Link to Abendiix's font website.";
+        document.getElementById("fontslinkicon").alt = "Black icon (in clear mode) that symbolizes a website link with two diagonal chains that redirects to Abendiix's fonts website.";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "About";
@@ -490,8 +514,20 @@ function updateTexts(language)
         //Sprites Love
         document.getElementById("spritesloveicon").alt = "プロジェクトロゴ Sprites Love. 「Sprites」という単語から出てくるピクセル化されたSと、右側にピクセルダウンすると、「Love」という単語を表す赤いピクセル化されたハートがあります。";
         document.getElementById("sprlv").innerHTML = "Sprites Love";
-        document.getElementById("spriteslovelink").ariaLabel = "Spritesへのリンク 愛のウェブサイト。";
+        document.getElementById("spriteslovelink").ariaLabel = "Sprites Loveへのリンクのウェブサイト。";
         document.getElementById("spriteslovelinkicon").alt = "Sprites Loveウェブサイトにリダイレクトする対角形の2つのチェーンとWebリンクを象徴する黒いアイコン。";
+        
+        //Trom
+        document.getElementById("tromicon").alt = "プロジェクトTROMのロゴ。 ゲームから来るピクセルアートで作られたトランペットを示しています。";
+        document.getElementById("trm").innerHTML = "Trom";
+        document.getElementById("tromlinkplaystore").ariaLabel = "TromのPlay Storeページへのリンク。";
+        document.getElementById("tromlinkplaystoreicon").alt = "PLAY STORE アイコンを黒(クリアモード)で、TROM の PLAY STORE ページにリダイレクト。";
+        
+        //Fonts
+        document.getElementById("fonts").alt = "Abendiixのフォントのロゴ。 ピクセルアートスタイルでは、大文字 A と小文字のケースを表示します。";
+        document.getElementById("fnts").innerHTML = "ソース";
+        document.getElementById("fontslink").ariaLabel = "Sprites Loveへのリンクのウェブサイト。";
+        document.getElementById("fontslinkicon").alt = "Abendiixのフォントウェブサイトにリダイレクトする2つの対角チェーンとウェブサイトのリンクを象徴する黒いアイコン(クリアモードで)。";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "について";
