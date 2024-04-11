@@ -234,6 +234,10 @@ function updateTexts(language)
         document.getElementById("spritesloveheart1-1png").ariaLabel =  "Descargar logo corazón de Sprites Love, relación 1 a 1, png.";
         document.getElementById("spritesloveheart1-10png").ariaLabel = "Descargar logo corazón de Sprites Love, relación 1 a 10, png.";
 
+        //Privacy Policies
+        document.getElementById("privacypolicies").innerHTML = "Políticas de privacidad";
+        document.getElementById("trompp").innerHTML = "Trom no genera ningún tipo de datos ni los transmite a ningún tipo de servidor o base de datos.";
+
         //External sites
         document.getElementById("tips").innerHTML = "Propinas";
         document.getElementById("ko-filink").ariaLabel = "Enlace al Ko-fi de Abendiix.";
@@ -439,6 +443,10 @@ function updateTexts(language)
         document.getElementById("spritesloveheart1-10svg").ariaLabel = "Download Sprites Love's heart logo, 1 to 10 pixel ratio, svg.";
         document.getElementById("spritesloveheart1-1png").ariaLabel = "Download Sprites Love's heart logo, 1 to 1 pixel ratio, png.";
         document.getElementById("spritesloveheart1-10png").ariaLabel = "Download Sprites Love's heart logo, 1 to 10 pixel ratio, png.";
+
+        //Privacy Policies
+        document.getElementById("privacypolicies").innerHTML = "Privacy Policies";
+        document.getElementById("trompp").innerHTML = "Trom does not generate any kind of data nor does it transmits it to any kind of server or data base.";
 
         //External sites
         document.getElementById("tips").innerHTML = "Tips";
@@ -646,6 +654,10 @@ function updateTexts(language)
         document.getElementById("spritesloveheart1-10svg").ariaLabel = "SpritesLoveのハートロゴをダウンロード, 比 1-10, svg。";
         document.getElementById("spritesloveheart1-1png").ariaLabel =  "SpritesLoveのハートロゴをダウンロード, 比 1-1, png。";
         document.getElementById("spritesloveheart1-10png").ariaLabel = "SpritesLoveのハートロゴをダウンロード, 比 1-10, png。";
+
+        //Privacy Policies
+        document.getElementById("privacypolicies").innerHTML = "プライバシーポリシー";
+        document.getElementById("trompp").innerHTML = "Tromは、あらゆる種類のデータを生成せず、あらゆる種類のサーバーやデータベースに送信しません。";
 
         //External sites
         document.getElementById("tips").innerHTML = "ヒント";
