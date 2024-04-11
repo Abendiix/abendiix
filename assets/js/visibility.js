@@ -28,10 +28,14 @@ var tools = document.getElementById("projectstools");
 var art = document.getElementById("projectsart");
 
 var spriteslove = document.getElementById("spriteslove");
+var trom = document.getElementById("trom");
+var fonts = document.getElementById("fonts");
 
 function showAll()
 {
     spriteslove.style.display = "block";
+    trom.style.display = "block";
+    fonts.style.display = "block";
     all.style.textDecoration = "underline";
     games.style.textDecoration = "none";
     tools.style.textDecoration = "none";
@@ -41,6 +45,8 @@ function showAll()
 function showGames()
 {
     spriteslove.style.display = "none";
+    trom.style.display = "block";
+    fonts.style.display = "none";
     all.style.textDecoration = "none";
     games.style.textDecoration = "underline";
     tools.style.textDecoration = "none";
@@ -50,6 +56,8 @@ function showGames()
 function showTools()
 {
     spriteslove.style.display = "block";
+    trom.style.display = "none";
+    fonts.style.display = "none";
     all.style.textDecoration = "none";
     games.style.textDecoration = "none";
     tools.style.textDecoration = "underline";
@@ -59,6 +67,8 @@ function showTools()
 function showArt()
 {
     spriteslove.style.display = "none";
+    trom.style.display = "none";
+    fonts.style.display = "block";
     all.style.textDecoration = "none";
     games.style.textDecoration = "none";
     tools.style.textDecoration = "none";
