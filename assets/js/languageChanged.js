@@ -22,26 +22,29 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /** Detect language and change texts */
-window.onload = (event) => {
-    if(localStorage.getItem("language") == "es")
+window.addEventListener("load", (event) => {
+    console.log("hola", localStorage.getItem("language"));
+    if(localStorage.getItem("language") == 'es')
     {
         updateTexts("es");
         document.documentElement.setAttribute("lang", 'es');
     }
-    else if (localStorage.getItem("language") == "en")
+    else if (localStorage.getItem("language") == 'en')
     {
         updateTexts("en");
         document.documentElement.setAttribute("lang", 'en');
     }
-    else if (localStorage.getItem("language") == "ja")
+    else if (localStorage.getItem("language") == 'ja')
     {
         updateTexts("ja");
         document.documentElement.setAttribute("lang", 'ja');
-    }    
-};
+    }
+  });
+  
 
 function changeToES()
 {
+    console.log(localStorage.getItem("language"));
     localStorage.setItem("language", "es");
     document.documentElement.setAttribute("lang", 'es');
     updateTexts("es");
@@ -49,6 +52,7 @@ function changeToES()
 
 function changeToEN()
 {
+    console.log(localStorage.getItem("language"));
     localStorage.setItem("language", "en");
     document.documentElement.setAttribute("lang", 'en');
     updateTexts("en");
@@ -56,6 +60,7 @@ function changeToEN()
 
 function changeToJA()
 {
+    console.log(localStorage.getItem("language"));
     localStorage.setItem("language", "ja");
     document.documentElement.setAttribute("lang", 'ja');
     updateTexts("ja");
@@ -63,7 +68,7 @@ function changeToJA()
 
 function updateTexts(language)
 {
-    if(localStorage.getItem("language") == "es")
+    if(localStorage.getItem("language") == 'es')
     {
         //Meta
         document.title = "Abendiix | ¡Juegos, herramientas y más!"
@@ -274,7 +279,7 @@ function updateTexts(language)
         document.getElementById("emotigag").ariaLabel = "Pequeña broma sobre un texto con forma de emoti que lanza emojis aleatorios de comida.";
         document.getElementById("emoti").ariaLabel = "Diferentes caracteres que forman una cara feliz que lanza estrellas y un emoji de comida aleatorio.";
     }
-    else if (localStorage.getItem("language") == "en")
+    else if (localStorage.getItem("language") == 'en')
     {
         //Meta
         document.title = "Abendiix | Games, tools and more!"
@@ -485,7 +490,7 @@ function updateTexts(language)
         document.getElementById("emoti").ariaLabel = "Multiple characters arranged to look like a happy face throwing stars and a random food emoji.";
 
     }
-    else if (localStorage.getItem("language") == "ja")
+    else if (localStorage.getItem("language") == 'ja')
     {
         //Meta
         document.title = "Abendiix | ゲーム、ツール、その他！"
