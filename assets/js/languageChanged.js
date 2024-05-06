@@ -23,7 +23,6 @@ SOFTWARE.
 */
 /** Detect language and change texts */
 window.addEventListener("load", (event) => {
-    console.log("hola", localStorage.getItem("language"));
     if(localStorage.getItem("language") == 'es')
     {
         updateTexts("es");
@@ -44,7 +43,6 @@ window.addEventListener("load", (event) => {
 
 function changeToES()
 {
-    console.log(localStorage.getItem("language"));
     localStorage.setItem("language", "es");
     document.documentElement.setAttribute("lang", 'es');
     updateTexts("es");
@@ -52,7 +50,6 @@ function changeToES()
 
 function changeToEN()
 {
-    console.log(localStorage.getItem("language"));
     localStorage.setItem("language", "en");
     document.documentElement.setAttribute("lang", 'en');
     updateTexts("en");
@@ -60,7 +57,6 @@ function changeToEN()
 
 function changeToJA()
 {
-    console.log(localStorage.getItem("language"));
     localStorage.setItem("language", "ja");
     document.documentElement.setAttribute("lang", 'ja');
     updateTexts("ja");
@@ -107,18 +103,30 @@ function updateTexts(language)
         document.getElementById("sprlv").innerHTML = "Sprites Love";
         document.getElementById("spriteslovelink").ariaLabel = "Enlace a la página de Sprites Love.";
         document.getElementById("spriteslovelinkicon").alt = "Icono negro que simboliza un enlace web con dos cadenas en diagonal que redirige a la web de Sprites Love.";
+        document.getElementById("spriteslovegithublink").ariaLabel = "Enlace al repositorio GitHub de Abendiix Sprites Love.";
+        document.getElementById("spriteslovegithublinkicon").alt = "Icono negro de GitHub que redirige a la página de Sprites Love.";
         
         //Trom
         document.getElementById("tromicon").alt = "Logo del proyecto Trom. Muestra una trompeta hecha en pixel art que viene del propio juego.";
         document.getElementById("trm").innerHTML = "Trom";
+        document.getElementById("tromlinkitchio").ariaLabel = "Enlace a la página de itch.io de Trom.";
+        document.getElementById("tromlinkitchioicon").alt = "Icono negro de itch.io que redirige a la página de Trom.";
+        document.getElementById("tromlinkko-fi").ariaLabel = "Enlace a la página de Ko-fi de Trom.";
+        document.getElementById("tromlinkko-fiicon").alt = "Icono negro de Ko-fi que redirige a la página de Trom.";
+        document.getElementById("tromlinkgithub").ariaLabel = "Enlace a la página de GitHub de Trom.";
+        document.getElementById("tromlinkgithubicon").alt = "Icono negro de GitHub que redirige a la página de Trom.";
         document.getElementById("tromlinkplaystore").ariaLabel = "Enlace a la página de Play Store de Trom.";
         document.getElementById("tromlinkplaystoreicon").alt = "Icono negro de Play Store que redirige a la página de Trom.";
+        document.getElementById("tromlinkappstore").ariaLabel = "Enlace a la página de App Store de Trom.";
+        document.getElementById("tromlinkappstoreicon").alt = "Icono negro de App Store que redirige a la página de Trom.";
         
         //Fonts
         document.getElementById("fonts").alt = "Logo para las fuentes de Abendiix. Muestra una A mayúscula y una a minúscula en estilo pixel art.";
         document.getElementById("fnts").innerHTML = "Fuentes";
         document.getElementById("fontslink").ariaLabel = "Enlace a la página web de fuentes de Abendiix.";
         document.getElementById("fontslinkicon").alt = "Icono negro que simboliza un enlace web con dos cadenas en diagonal que redirige a la página web de fuentes de Abendiix.";
+        document.getElementById("fontsgithublink").ariaLabel = "Enlace al repositorio GitHub de fuentes de Abendiix.";
+        document.getElementById("fontsgithublinkicon").alt = "Icono negro de GitHub que redirige al repositorio de fuentes de Abendiix.";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "Sobre";
@@ -318,18 +326,30 @@ function updateTexts(language)
         document.getElementById("sprlv").innerHTML = "Sprites Love";
         document.getElementById("spriteslovelink").ariaLabel = "Link to Sprites Love's website.";
         document.getElementById("spriteslovelinkicon").alt = "Black icon that symbolizes a website link with two diagonal chains that redirects to Sprites Love's website.";
-        
+        document.getElementById("spriteslovegithublink").ariaLabel = "Link to Abendiix's Sprites Love's GitHub repository.";
+        document.getElementById("spriteslovegithublinkicon").alt = "GitHub icon in black (clear mode) that redirects to Abendiix's Sprites Love's repository.";
+
         //Trom
         document.getElementById("tromicon").alt = "Logo for the project Trom. It shows a trumpet made with pixel art that comes from the game.";
         document.getElementById("trm").innerHTML = "Trom";
+        document.getElementById("tromlinkitchio").ariaLabel = "Link to Trom's itch.io page.";
+        document.getElementById("tromlinkitchioicon").alt = "itch.io icon in black (clear mode) that redirects to Trom's itch.io page.";
+        document.getElementById("tromlinkko-fi").ariaLabel = "Link to Trom's Ko-fi page.";
+        document.getElementById("tromlinkko-fiicon").alt = "Ko-fi icon in black (clear mode) that redirects to Trom's Ko-fi page.";
+        document.getElementById("tromlinkgithub").ariaLabel = "Link to Trom's GitHub page.";
+        document.getElementById("tromlinkgithubicon").alt = "GitHub icon in black (clear mode) that redirects to Trom's GitHub page.";
         document.getElementById("tromlinkplaystore").ariaLabel = "Link to Trom's Play Store page.";
         document.getElementById("tromlinkplaystoreicon").alt = "Play Store icon in black (clear mode) that redirects to Trom's Play Store page.";
+        document.getElementById("tromlinkappstore").ariaLabel = "Link to Trom's App Store page.";
+        document.getElementById("tromlinkappstoreicon").alt = "App Store icon in black (clear mode) that redirects to Trom's App Store page.";
         
         //Fonts
         document.getElementById("fonts").alt = "Logo for Abendiix's fonts. It shows a upper case A and a lower case a in pixel art style.";
         document.getElementById("fnts").innerHTML = "Fonts";
         document.getElementById("fontslink").ariaLabel = "Link to Abendiix's font website.";
         document.getElementById("fontslinkicon").alt = "Black icon (in clear mode) that symbolizes a website link with two diagonal chains that redirects to Abendiix's fonts website.";
+        document.getElementById("fontsgithublink").ariaLabel = "Link to Abendiix's font's GitHub repository.";
+        document.getElementById("fontsgithublinkicon").alt = "GitHub icon in black (clear mode) that redirects to Abendiix's font's repository.";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "About";
@@ -529,18 +549,30 @@ function updateTexts(language)
         document.getElementById("sprlv").innerHTML = "Sprites Love";
         document.getElementById("spriteslovelink").ariaLabel = "Sprites Loveへのリンクのウェブサイト。";
         document.getElementById("spriteslovelinkicon").alt = "Sprites Loveウェブサイトにリダイレクトする対角形の2つのチェーンとWebリンクを象徴する黒いアイコン。";
+        document.getElementById("spriteslovegithublink").ariaLabel = "AbendiixのSprites LoveのGitHubリポジトリへのリンク。";
+        document.getElementById("spriteslovegithublinkicon").alt = "Sprites Loveページにリダイレクトする GitHub 黒のアイコン。";
         
         //Trom
         document.getElementById("tromicon").alt = "プロジェクトTROMのロゴ。 ゲームから来るピクセルアートで作られたトランペットを示しています。";
         document.getElementById("trm").innerHTML = "Trom";
+        document.getElementById("tromlinkitchio").ariaLabel = "Tromのitch.ioページへのリンク。";
+        document.getElementById("tromlinkitchioicon").alt = "itch.io アイコンを黒(クリアモード)で、Trom の itch.io ページにリダイレクト。";
+        document.getElementById("tromlinkko-fi").ariaLabel = "TromのKo-fiページへのリンク。";
+        document.getElementById("tromlinkko-fiicon").alt = "Ko-fi アイコンを黒(クリアモード)で、Trom の Ko-fi ページにリダイレクト。";
+        document.getElementById("tromlinkgithub").ariaLabel = "TromのGitHubページへのリンク。";
+        document.getElementById("tromlinkgithubicon").alt = "GitHub アイコンを黒(クリアモード)で、Trom の GitHub ページにリダイレクト。";
         document.getElementById("tromlinkplaystore").ariaLabel = "TromのPlay Storeページへのリンク。";
-        document.getElementById("tromlinkplaystoreicon").alt = "PLAY STORE アイコンを黒(クリアモード)で、TROM の PLAY STORE ページにリダイレクト。";
+        document.getElementById("tromlinkplaystoreicon").alt = "Play Store アイコンを黒(クリアモード)で、Trom の Play Store ページにリダイレクト。";
+        document.getElementById("tromlinkappstore").ariaLabel = "TromのApp Storeページへのリンク。";
+        document.getElementById("tromlinkappstoreicon").alt = "App Store アイコンを黒(クリアモード)で、Trom の App Store ページにリダイレクト。";
         
         //Fonts
         document.getElementById("fonts").alt = "Abendiixのフォントのロゴ。 ピクセルアートスタイルでは、大文字 A と小文字のケースを表示します。";
         document.getElementById("fnts").innerHTML = "ソース";
         document.getElementById("fontslink").ariaLabel = "Sprites Loveへのリンクのウェブサイト。";
         document.getElementById("fontslinkicon").alt = "Abendiixのフォントウェブサイトにリダイレクトする2つの対角チェーンとウェブサイトのリンクを象徴する黒いアイコン(クリアモードで)。";
+        document.getElementById("fontsgithublink").ariaLabel = "AbendiixソースのGitHubリポジトリへのリンク。";
+        document.getElementById("fontsgithublinkicon").alt = "Abendiix ソースのリポジトリをリダイレクトする GitHub の黒いアイコン。";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "について";
