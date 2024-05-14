@@ -53,6 +53,11 @@ a img:hover{
   filter: invert(51%) sepia(9%) saturate(0%) hue-rotate(175deg) brightness(96%) contrast(84%) !important;
 }
 
+.screenshot:hover{
+  /*Filter thanks to: https://github.com/angel-rs/css-color-filter-generator*/
+  filter: none !important;
+}
+
 summary:hover
 {
   color: gray !important;
