@@ -25,6 +25,7 @@ SOFTWARE.
 var page = document.getElementById("page");
 
 var elementsToChangeArray = document.getElementsByClassName("changeableColor");
+var elementsToChangeArrayLinks = document.getElementsByClassName("changeableColorLink");
 
 window.onload = (event) => {
     if(localStorage.getItem("mode") == "clear")
@@ -46,9 +47,19 @@ function filterClear(item)
     item.style.filter = "invert(0%) sepia(5%) saturate(4170%) hue-rotate(82deg) brightness(118%) contrast(84%)";
 }
 
+function filterClearLinks(item)
+{
+    item.style.color = "#141414";
+}
+
 function filterDark(item)
 {
     item.style.filter = "invert(99%) sepia(8%) saturate(1%) hue-rotate(316deg) brightness(110%) contrast(84%)";
+}
+
+function filterDarkLinks(item)
+{
+    item.style.color = "white";
 }
 
 function changeToClearMode()
@@ -63,6 +74,11 @@ function changeToClearMode()
     {
         filterClear(elementsToChangeArray.item(i));
     }
+
+    for (var i = 0; i < elementsToChangeArrayLinks.length; i++)
+    {
+        filterClearLinks(elementsToChangeArrayLinks.item(i));
+    }
 }
 
 function changeToDarkMode()
@@ -76,5 +92,10 @@ function changeToDarkMode()
     for (var i = 0; i < elementsToChangeArray.length; i++)
     {
         filterDark(elementsToChangeArray.item(i));
+    }
+
+    for (var i = 0; i < elementsToChangeArrayLinks.length; i++)
+    {
+        filterDarkLinks(elementsToChangeArrayLinks.item(i));
     }
 }
