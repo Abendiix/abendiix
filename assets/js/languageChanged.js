@@ -247,6 +247,25 @@ function updateTexts(language)
         document.getElementById("spritesloveheart1-1png").ariaLabel =  "Descargar logo corazón de Sprites Love, relación 1 a 1, png.";
         document.getElementById("spritesloveheart1-10png").ariaLabel = "Descargar logo corazón de Sprites Love, relación 1 a 10, png.";
 
+        //Trom
+        document.getElementById("tromzip").innerHTML = "Descargar todo";
+        document.getElementById("tromzip").ariaLabel = "Archivo zip con el logo de Trom y capturas de pantalla del juego en formato svg y png.";
+        document.getElementById("logotrom").innerHTML = "Logo";
+        document.getElementById("logotromthumbnail").alt = "Logo de Trom que sirve como minitarua.";
+        document.getElementById("logotromsvg").ariaLabel = "Descargar logo de Trom, svg.";
+        document.getElementById("logotrompng").ariaLabel = "Descargar logo de Trom, png.";
+        document.getElementById("screenshotstrom").innerHTML = "Capturas de pantalla del juego (click en las imágenes para descargarlas).";
+        document.getElementById("menutrom").ariaLabel = "Descargar captura de pantalla del menú de Trom, png.";
+        document.getElementById("screenshottrommenu").alt = "Captura de pantalla del menú de Trom que sirve como miniatura.";
+        document.getElementById("game1_1trom").ariaLabel = "Descargar la primera captura de pantalla del primer modo de juego de Trom, png.";
+        document.getElementById("screenshottromgame1_1").alt = "Primera captura de pantalla del primer modo de juego de Trom que sirve como miniatura.";
+        document.getElementById("game1_2trom").ariaLabel = "Descargar segunda captura del primer modo de juego de Trom, png.";
+        document.getElementById("screenshottromgame1_2").alt = "Segunda captura de pantalla del primer modo de juego de Trom que sirve como miniatura.";
+        document.getElementById("game2trom").ariaLabel = "Descargar captura de pantalla del segundo modo de juego de Trom, png.";
+        document.getElementById("screenshottromgame2").alt = "Captura de pantalla del segundo modo de juego de Trom que sirve como miniatura.";
+        document.getElementById("configtrom").ariaLabel = "Descargar captura de pantalla de la configuración de Trom, png.";
+        document.getElementById("screenshottromconfig").alt = "Captura de pantalla de la configuración de Trom que sirve como miniatura.";
+
         //Privacy Policies
         document.getElementById("privacypolicies").innerHTML = "Políticas de privacidad";
         document.getElementById("trompp").innerHTML = "Trom no genera ningún tipo de datos ni los transmite a ningún tipo de servidor o base de datos.";
@@ -468,6 +487,26 @@ function updateTexts(language)
         document.getElementById("spritesloveheart1-10svg").ariaLabel = "Download Sprites Love's heart logo, 1 to 10 pixel ratio, svg.";
         document.getElementById("spritesloveheart1-1png").ariaLabel = "Download Sprites Love's heart logo, 1 to 1 pixel ratio, png.";
         document.getElementById("spritesloveheart1-10png").ariaLabel = "Download Sprites Love's heart logo, 1 to 10 pixel ratio, png.";
+
+
+        //Trom
+        document.getElementById("tromzip").innerHTML = "Download everything";
+        document.getElementById("tromzip").ariaLabel = "Zip file with Trom's logo and game's screenshots in svg and png format.";
+        document.getElementById("logotrom").innerHTML = "Logo";
+        document.getElementById("logotromthumbnail").alt = "Trom's logo that serves as a thumbnail.";
+        document.getElementById("logotromsvg").ariaLabel = "Download Trom's logo, svg.";
+        document.getElementById("logotrompng").ariaLabel = "Download Trom's logo, png.";
+        document.getElementById("screenshotstrom").innerHTML = "Game's screenshots (click on images to download them)";
+        document.getElementById("menutrom").ariaLabel = "Download Trom's menu screenshot, png.";
+        document.getElementById("screenshottrommenu").alt = "Trom's menu screenshot that serves as a thumbnail.";
+        document.getElementById("game1_1trom").ariaLabel = "Download Trom's first game mode's first screenshot, png.";
+        document.getElementById("screenshottromgame1_1").alt = "Trom's first game mode's first screenshot that serves as a thumbnail.";
+        document.getElementById("game1_2trom").ariaLabel = "Download Trom's first game mode's second screenshot, png.";
+        document.getElementById("screenshottromgame1_2").alt = "Trom's first game mode's second screenshot that serves as a thumbnail.";
+        document.getElementById("game2trom").ariaLabel = "Download Trom's second game mode's screenshot, png.";
+        document.getElementById("screenshottromgame2").alt = "Trom's second game screenshot that serves as a thumbnail.";
+        document.getElementById("configtrom").ariaLabel = "Download Trom's configuration screenshot, png.";
+        document.getElementById("screenshottromconfig").alt = "Trom's configuration screenshot that serves as a thumbnail.";
 
         //Privacy Policies
         document.getElementById("privacypolicies").innerHTML = "Privacy Policies";
@@ -691,6 +730,25 @@ function updateTexts(language)
         document.getElementById("spritesloveheart1-10svg").ariaLabel = "SpritesLoveのハートロゴをダウンロード, 比 1-10, svg。";
         document.getElementById("spritesloveheart1-1png").ariaLabel =  "SpritesLoveのハートロゴをダウンロード, 比 1-1, png。";
         document.getElementById("spritesloveheart1-10png").ariaLabel = "SpritesLoveのハートロゴをダウンロード, 比 1-10, png。";
+
+        //Trom
+        document.getElementById("tromzip").innerHTML = "すべてのファイルをダウンロードします";
+        document.getElementById("tromzip").ariaLabel = "Trom のロゴとゲームのスクリーンショットを svg と png 形式の zip ファイル。";
+        document.getElementById("logotrom").innerHTML = "ロゴ";
+        document.getElementById("logotromthumbnail").alt = "サムネイルとして機能するTromのロゴ。";
+        document.getElementById("logotromsvg").ariaLabel = "Tromのロゴ、svgをダウンロード。";
+        document.getElementById("logotrompng").ariaLabel = "Tromのロゴ、pngをダウンロード。";
+        document.getElementById("screenshotstrom").innerHTML = "ゲームのスクリーンショット(画像をクリックしてダウンロードします)";
+        document.getElementById("menutrom").ariaLabel = "Tromのメニュースクリーンショット、pngをダウンロード。";
+        document.getElementById("screenshottrommenu").alt = "サムネイルとして機能するTromのメニュースクリーンショット。";
+        document.getElementById("game1_1trom").ariaLabel = "Trom初のゲームモード初のスクリーンショットをダウンロード, png。";
+        document.getElementById("screenshottromgame1_1").alt = "Trom 初のゲームモードの最初のスクリーンショットは、サムネイルとして機能します。";
+        document.getElementById("game1_2trom").ariaLabel = "TRom初のゲームモードの2番目のスクリーンショットをダウンロード, png。";
+        document.getElementById("screenshottromgame1_2").alt = "Trom の最初のゲームモードの第 2 スクリーンショットは、サムネイルとして機能します。";
+        document.getElementById("game2trom").ariaLabel = "ダウンロード Tromの2番目のゲームモードのスクリーンショット、png。";
+        document.getElementById("screenshottromgame2").alt = "サムネイルとして機能するTromの2番目のゲームスクリーンショット。";
+        document.getElementById("configtrom").ariaLabel = "Tromの構成スクリーンショット、pngをダウンロード。";
+        document.getElementById("screenshottromconfig").alt = "サムネイルとして機能するTromの構成スクリーンショット。";
 
         //Privacy Policies
         document.getElementById("privacypolicies").innerHTML = "プライバシーポリシー";
