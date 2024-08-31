@@ -84,7 +84,7 @@ function updateTexts(language)
         document.getElementById("darkmode").ariaLabel = "Cambiar los colores de la página al modo oscuro.";
         document.getElementById("dark").alt = "Icono de una luna para cambiar la página al modo oscuro.";
 
-        document.getElementById("libretranslate").style.display = "none";
+        document.getElementById("translationauthor").style.display = "none";
 
         //Projects' filters
         document.getElementById("projects").innerHTML = "Proyectos |";
@@ -326,7 +326,7 @@ function updateTexts(language)
         document.getElementById("darkmode").ariaLabel = "Change website colors to dark mode.";
         document.getElementById("dark").alt = "Icon showing a moon for changing the website to dark mode.";
 
-        document.getElementById("libretranslate").style.display = "none";
+        document.getElementById("translationauthor").style.display = "none";
 
         //Projects' filters
         document.getElementById("projects").innerHTML = "Projects |";
@@ -555,8 +555,8 @@ function updateTexts(language)
         document.title = "Abendiix | ゲーム、ツール、その他！"
 
         //Header
-        document.getElementById("linktothisweb").ariaLabel = "AbendiixのWebサイト(現在)へのリンク。";
-        document.getElementById("banner").alt = "拡大された形態のAbendiixロゴ。 文字は黒く、背景は透明(クリアモード)です。";
+        document.getElementById("linktothisweb").ariaLabel = "Abendiixのウェブサイトへのリンク（現在のページ）。";
+        document.getElementById("banner").alt = "Abendiixのロゴの拡大版。文字は黒で、画像の背景は透明（クリアモード）です。";
         document.getElementById("moto").innerHTML = "ゲーム、ツール、その他！";
         
         //Languages and modes
@@ -564,230 +564,230 @@ function updateTexts(language)
         document.getElementById("en").style.textDecoration = "none";
         document.getElementById("ja").style.textDecoration = "underline";
 
-        document.getElementById("clearmode").ariaLabel = "ページの色をクリアモードに変更。";
-        document.getElementById("clear").alt = "ページをクリアモードに変更する太陽のアイコン。";
-        document.getElementById("darkmode").ariaLabel = "ページの色をダークモードに変更する。";
-        document.getElementById("dark").alt = "月のアイコンでページを暗モードに変更。";
+        document.getElementById("clearmode").ariaLabel = "ウェブサイトの色をクリアモードに変更する。";
+        document.getElementById("clear").alt = "ウェブサイトをクリアモードに変更するための太陽のアイコン。";
+        document.getElementById("darkmode").ariaLabel = "ウェブサイトの色をダークモードに変更する。";
+        document.getElementById("dark").alt = "ウェブサイトをダークモードに変更するための月のアイコン。";
 
-        document.getElementById("libretranslate").style.display = "block";
+        document.getElementById("translationauthor").style.display = "block";
 
         //Projects' filters
         document.getElementById("projects").innerHTML = "プロジェクト |";
-        document.getElementById("projectsall").ariaLabel = "すべてのAbendiixプロジェクトを表示。";
+        document.getElementById("projectsall").ariaLabel = "Abendiixのすべてのプロジェクトを表示する。";
         document.getElementById("projectsall").innerHTML = "すべて";
-        document.getElementById("projectsgames").ariaLabel = "Abendiixのゲームを表示。";
+        document.getElementById("projectsgames").ariaLabel = "Abendiixのゲームを表示する。";
         document.getElementById("projectsgames").innerHTML = "ゲーム";
-        document.getElementById("projectstools").ariaLabel = "Abendiixツールを表示します。";
+        document.getElementById("projectstools").ariaLabel = "Abendiixのツールを表示する。";
         document.getElementById("projectstools").innerHTML = "ツール";
-        document.getElementById("projectsart").ariaLabel = "Abendiixのアートを表示。";
+        document.getElementById("projectsart").ariaLabel = "Abendiixのアートを表示する。";
         document.getElementById("projectsart").innerHTML = "アート";
 
         //Projects
         //Sprites Love
-        document.getElementById("spritesloveicon").alt = "プロジェクトロゴ Sprites Love. 「Sprites」という単語から出てくるピクセル化されたSと、右側にピクセルダウンすると、「Love」という単語を表す赤いピクセル化されたハートがあります。";
+        document.getElementById("spritesloveicon").alt = "プロジェクトSprites Loveのロゴ。『Sprites』の文字からピクセル化されたSが表示されており、その下と右に赤いピクセル化されたハートが『Love』を表しています。";
         document.getElementById("sprlv").innerHTML = "Sprites Love";
-        document.getElementById("spriteslovelink").ariaLabel = "Sprites Loveへのリンクのウェブサイト。";
-        document.getElementById("spriteslovelinkicon").alt = "Sprites Loveウェブサイトにリダイレクトする対角形の2つのチェーンとWebリンクを象徴する黒いアイコン。";
+        document.getElementById("spriteslovelink").ariaLabel = "Sprites Loveのウェブサイトへのリンク。";
+        document.getElementById("spriteslovelinkicon").alt = "Sprites Loveのウェブサイトにリダイレクトする2つの斜めのチェーンを持つウェブサイトリンクを象徴する黒いアイコン。";
         document.getElementById("spriteslovegithublink").ariaLabel = "AbendiixのSprites LoveのGitHubリポジトリへのリンク。";
-        document.getElementById("spriteslovegithublinkicon").alt = "Sprites Loveページにリダイレクトする GitHub 黒のアイコン。";
+        document.getElementById("spriteslovegithublinkicon").alt = "AbendiixのSprites Loveのリポジトリにリダイレクトする黒いGitHubアイコン（クリアモード）。";
         
         //Trom
-        document.getElementById("tromicon").alt = "プロジェクトTROMのロゴ。 ゲームから来るピクセルアートで作られたトランペットを示しています。";
+        document.getElementById("tromicon").alt = "プロジェクトTromのロゴ。ゲームから来たピクセルアートで作られたトランペットが表示されています。";
         document.getElementById("trm").innerHTML = "Trom";
         document.getElementById("tromlinkitchio").ariaLabel = "Tromのitch.ioページへのリンク。";
-        document.getElementById("tromlinkitchioicon").alt = "itch.io アイコンを黒(クリアモード)で、Trom の itch.io ページにリダイレクト。";
+        document.getElementById("tromlinkitchioicon").alt = "Tromのitch.ioページにリダイレクトする黒いitch.ioアイコン（クリアモード）。";
         document.getElementById("tromlinkko-fi").ariaLabel = "TromのKo-fiページへのリンク。";
-        document.getElementById("tromlinkko-fiicon").alt = "Ko-fi アイコンを黒(クリアモード)で、Trom の Ko-fi ページにリダイレクト。";
+        document.getElementById("tromlinkko-fiicon").alt = "TromのKo-fiページにリダイレクトする黒いKo-fiアイコン（クリアモード）。";
         document.getElementById("tromlinkgithub").ariaLabel = "TromのGitHubページへのリンク。";
-        document.getElementById("tromlinkgithubicon").alt = "GitHub アイコンを黒(クリアモード)で、Trom の GitHub ページにリダイレクト。";
+        document.getElementById("tromlinkgithubicon").alt = "TromのGitHubページにリダイレクトする黒いGitHubアイコン（クリアモード）。";
         document.getElementById("tromlinkplaystore").ariaLabel = "TromのPlay Storeページへのリンク。";
-        document.getElementById("tromlinkplaystoreicon").alt = "Play Store アイコンを黒(クリアモード)で、Trom の Play Store ページにリダイレクト。";
+        document.getElementById("tromlinkplaystoreicon").alt = "TromのPlay Storeページにリダイレクトする黒いPlay Storeアイコン（クリアモード）。";
         document.getElementById("tromlinkappstore").ariaLabel = "TromのApp Storeページへのリンク。";
-        document.getElementById("tromlinkappstoreicon").alt = "App Store アイコンを黒(クリアモード)で、Trom の App Store ページにリダイレクト。";
+        document.getElementById("tromlinkappstoreicon").alt = "TromのApp Storeページにリダイレクトする黒いApp Storeアイコン（クリアモード）。";
         
         //Fonts
-        document.getElementById("fonts").alt = "Abendiixのフォントのロゴ。 ピクセルアートスタイルでは、大文字 A と小文字のケースを表示します。";
-        document.getElementById("fnts").innerHTML = "ソース";
-        document.getElementById("fontslink").ariaLabel = "Sprites Loveへのリンクのウェブサイト。";
-        document.getElementById("fontslinkicon").alt = "Abendiixのフォントウェブサイトにリダイレクトする2つの対角チェーンとウェブサイトのリンクを象徴する黒いアイコン(クリアモードで)。";
-        document.getElementById("fontsgithublink").ariaLabel = "AbendiixソースのGitHubリポジトリへのリンク。";
-        document.getElementById("fontsgithublinkicon").alt = "Abendiix ソースのリポジトリをリダイレクトする GitHub の黒いアイコン。";
+        document.getElementById("fonts").alt = "Abendiixのフォントのロゴ。大文字のAと小文字のaがピクセルアートスタイルで表示されています。";
+        document.getElementById("fnts").innerHTML = "フォント";
+        document.getElementById("fontslink").ariaLabel = "Abendiixのフォントウェブサイトへのリンク。";
+        document.getElementById("fontslinkicon").alt = "Abendiixのフォントウェブサイトにリダイレクトする2つの斜めのチェーンを持つウェブサイトリンクを象徴する黒いアイコン（クリアモード）。";
+        document.getElementById("fontsgithublink").ariaLabel = "AbendiixのフォントのGitHubリポジトリへのリンク。";
+        document.getElementById("fontsgithublinkicon").alt = "Abendiixのフォントのリポジトリにリダイレクトする黒いGitHubアイコン（クリアモード）。";
 
         //Abouts
         document.getElementById("aboutabndx").innerHTML = "について";
-        document.getElementById("aboutap1").innerHTML = "インディー開発者とアーティストのAbendiixです。 自分の注意をキャッチするゲーム、ツール、そして何かを作ったり、私のプロジェクトで世界をより良い場所にすることができるようにしたい。";
-        document.getElementById("aboutap2").innerHTML = "Abendiix は、開発者/アーティストのエイリアスとプロジェクトの両方を自分で行います。 Abendiixクスでは、自分がやりとりするすべての人や、影響を受けたり、影響を受けたりすることができるので、オープンでアクセス可能でフレンドリーなアイデア、アート、プロジェクトの開発の夢と目標を追求したいと思います。";
-        document.getElementById("aboutap3").innerHTML = "Abendiix(プロジェクト内で)は、Abendiix(自分で)と同じように成長、学び、進化し、変化します。 アベンディイックスの目標は、常に私たちの惑星にプラスの影響を求めるあらゆる創造を最大限に活用し、Abendiixを知っている人々と私たちを囲むもの。";
-        document.getElementById("aboutap4").innerHTML = "どんなものでもお気軽にお問い合わせください！ 私は修正または解決するべきエラー/バグ/問題, あなたが持っている任意の質問, 私はあなたが私のプロジェクトで持っていたファンアートや経験として、私が望むものを表示したり、あまりにもこんにちはと言うか、チャットを持っている. 誰とでも話し合い、やりとりしてもらえるのは、感謝の気持ちで幸せです！";
+        document.getElementById("aboutap1").innerHTML = "私はAbendiix、インディー開発者でありアーティストです。ゲームやツール、そして私の興味を引くものを作成（および試行錯誤）し、プロジェクトを通じて世界をより良くすることを望んでいます。";
+        document.getElementById("aboutap2").innerHTML = "Abendiixは、私の開発者/アーティストのエイリアスであり、同時に独自のプロジェクトでもあります。アイデア、アート、プロジェクトをできる限りオープンでアクセスしやすく、親しみやすくするという夢と目標を追求しています。";
+        document.getElementById("aboutap3").innerHTML = "Abendiix（プロジェクトとして）は、私自身（Abendiix）と同じくらい、またはそれ以上に成長し、学び、進化し、変わり続けます。Abendiixの目標は、どんな創作物でも最善を尽くし、Abendiixを知る人々や私たちの星、周囲のすべてに良い影響を与えることです。";
+        document.getElementById("aboutap4").innerHTML = "気軽にご連絡ください！ 修正や解決が必要なエラーやバグ、質問、ファンアートやプロジェクトに関する体験の共有、またはただの挨拶やおしゃべりなど、どんなことでも歓迎します。どんな方ともお話しし、関わりを持つことを心から嬉しく思います！";
 
         document.getElementById("projectssummary").innerHTML = "プロジェクト";
-        document.getElementById("aboutpp1").innerHTML = "どんな作品でも、少なくとも2つの作者(またはその創造に感銘を与える2つの部分)が常にあると確信しています。 最初の1つは、アイデアを思い浮かべて現実に変える「オリジナル」クリエーターです。 その2つ目は、その現実、解釈、楽しみ、そしてそれ以上に経験する人であり、その現実を全体にし、その過程にある感覚を与える人です。"
-        document.getElementById("aboutpp2").innerHTML = "時々それらの両方が元のクリエイターです、自分の創作とやりとりする独創的なクリエーターが、その現実を創造し、あらゆる観点からそれを経験する過程であっても。";
-        document.getElementById("aboutpp3").innerHTML = "このシナリオを考慮せずに、これらの2つの異なる著者とその現実間の関係は、可能な限り健康である必要があります。 当事者の1つまたは2つが、必要な注意と責任を持っていない場合、その関係は、彼らが考慮に入れられていないという感じの相手の1つを残します、彼らは真剣に受け取られていない、または彼らが問題にしなかった場合。";
-        document.getElementById("aboutpp4").innerHTML = "そのような関係は、可能な限り、両方の当事者の背景、状況、およびニーズを考慮に入れ、互いに尊重し、それらとの間の相互作用と共存し、それらを囲む方法について責任を負う必要があります。 このように現実は、2つの間の等しい関係とのみ存在することができることを与えることができます。";
-        document.getElementById("aboutpp5").innerHTML = "時には、元のクリエイターは、そのニーズが必要とされる創造に感銘を与えるものである「第二のもの」であっても、誰かがそれを働かない限り、それは現実に変わります。";
-        document.getElementById("aboutpp6").innerHTML = "私のプロジェクトは、彼らがどのような方法で利益をもたらさないならば意味がないだろう, 健康で関係者に一貫した方法で. 皆さんは、Abendiixと彼らのプロジェクトに関連したすべてのことを楽しみ、やり、共有することを歓迎したいと思っています。 さらに、Abendiixプロジェクトの経験は、人々が経験する他の創造や現実につながることができます。アイデア、感情などが相互作用し、誰もが楽しむことができる多くの他の創造を生み出します。";
-        document.getElementById("aboutpp7").innerHTML = "創造的プロセスと人々自身を表現する必要性は、制御または停止しなければならないものではありません。 他の人と楽しく共有したい人から、他の人の創造と感じている喜びを共有したい人から、彼らが誰であるかを主張したい人のように、自分の人生やどんな動きのいくつかの側面を包括します。";
-        document.getElementById("aboutpp8").innerHTML = "法律や責任の制限がいくつかありますが、その意味で物事を創造し、時折手放せない感情を感じる必要があります。 これらの理由から、私の作品は、私ができる限りオープン、無料で、アクセスできるようになり、誰もがあらゆる意味でそれらを最大限に活用できるようにしたいと思っています。";
-        document.getElementById("aboutpp9").innerHTML = "クリエイティビティ、必要性、または人々 の欲求を制限しないプロジェクトやクリエイティビティを行い、彼らが何をするかを十分に経験したいです。ABENDIIXとプロジェクトとやりとりするとき、すべての人が完全に自由に感じたい。私は、すべての人から、すべての人からより多くのことを学びたいと思い、私と他の人が愛するプロジェクトや創造を行い、一緒に楽しみたいと思っています(そして、私に財政的に保つために信頼している人と一緒に 🤞 より多くのより良いプロジェクトを作るために) プロセスで。";
-        document.getElementById("aboutpp10").innerHTML = "<b>PS<b>: これは、自分のプロジェクトやアートを作成したいのを実際に見てみる方法です。それは、将来や/または私はそれらを作成するように変化しかもしれません(そして、私は誰やプロジェクトから頑固に期待するものではありません; 誰もが異なることを目指しるべきです)。 私はエラーを犯し、私はそれらについて話し、私のプロジェクトや自分自身を改善するために開いています。 常に私に手を差し伸べる！ ^^。";
+        document.getElementById("aboutpp1").innerHTML = "どんな創作物にも必ず2人以上の著者（またはその創作物に意味を与える2つの部分）がいると私は信じています。最初の著者は、アイデアを考え出し、それを現実に変える「オリジナル」のクリエイターです。2番目の著者は、その現実を体験し、それを解釈し、楽しみ、感じるなどして、その現実を一体化させ、その存在に意味を与える役割を担います。";
+        document.getElementById("aboutpp2").innerHTML = "時には、両者が同じ「オリジナル」のクリエイターで、自分の創作物と対話していることもあります。たとえその現実を作り出す過程にあったり、どの視点から体験しているにせよです。";
+        document.getElementById("aboutpp3").innerHTML = "このシナリオを考慮せずに言えば、その2人の異なる著者と現実との関係は、できる限り健全であるべきです。一方または両方の部分が必要な配慮や責任を怠ると、その関係は一部が置き去りにされている、真剣に受け止められていない、または重要でないと感じることになります。";
+        document.getElementById("aboutpp4").innerHTML = "その関係は、できる限り両方の著者の背景、状況、ニーズを考慮し、互いを尊重し、どのように相互作用し共存するか、また周囲とどのように関わるかについて責任を持つべきです。これにより、両者の平等な関係がある現実が実現できるでしょう。";
+        document.getElementById("aboutpp5").innerHTML = "時には、オリジナルのクリエイターがその「二番目の著者」であり、そのニーズが必要とされる創作物に意味と形を与える場合があります。そして、その現実が実現するには誰かがそれに取り組む必要があります。";
+        document.getElementById("aboutpp6").innerHTML = "私のプロジェクトは、関わるすべての部分にとって健康的で一貫性のある方法で有益でない限り、その目的を欠いてしまいます。Abendiixとそのプロジェクトに関連するすべてのことを楽しみ、関わり、共有できるように、皆さんが歓迎されていると感じてもらいたいと思います。さらに、Abendiixのプロジェクトとの体験が、アイデアや感情などが相互作用し、共存し、さらに多くの創作物を生み出す新たな創作物や現実をもたらすかもしれません。";
+        document.getElementById("aboutpp7").innerHTML = "創造的なプロセスと人々が自分を表現し、声を聞いてもらう必要性は、制御されたり止められるべきではなく、また止められることもありません。他人の創造物で感じた喜びを分かち合いたい人から、自分自身を主張したり、人生のあらゆる側面や運動に対して権利を主張したい人まで。";
+        document.getElementById("aboutpp8").innerHTML = "明らかな法的および責任の制限はありますが、時にはその創造的な欲求をただ手放すことができないと感じることについて話しています。これらの理由から、私は自分の創作物をできる限りオープンで自由でアクセスしやすいものにし、誰もがあらゆる意味や方法で最大限に活用できるようにしたいと思っています。";
+        document.getElementById("aboutpp9").innerHTML = "これらの言葉は、他人の創作物を体験する際に私の心をよぎる考えであり、それらすべてが私に与える感情と、私のプロジェクトや創作物がどうあるべきかについての結果です。私は、人々の創造性やニーズ、私が作るものを完全に楽しみ、体験する欲望を制限することなく、プロジェクトや創作物を作りたいと考えています。Abendiixやそのプロジェクトに触れることで、人々にできるだけ多くの自由を感じてもらいたいと思っています。すべてとすべての人についてもっと学び、私自身や他の人が愛し楽しむプロジェクトや創作物を作りたいと思っています（そして、もっと良いプロジェクトを作るために生計を立てられることを願っています🤞）。";
+        document.getElementById("aboutpp10").innerHTML = "追記：これは、私が自分のプロジェクトやアートをどう作りたいかについての現時点での考え方であり、将来的に変わる可能性があることや、それらを作成する過程で変わる可能性もあります（誰に対しても、またどのプロジェクトに対しても頑固に期待しているわけではありません；すべての人は異なり、異なることを目指すべきです）。私は間違いを犯すことがあり、私のプロジェクトや自分自身を改善するために話し合うことにオープンです。いつでも気軽に連絡してください！ ^^。";
 
         document.getElementById("projectssoftwaretitle").innerHTML = "ソフトウェア";
-        document.getElementById("aboutpsp1").innerHTML = "すべてのAbendiixのソフトウェアは、常にオープンソースであり、誰にも利用できます。 プラットフォームの会社からプライベートコードでビデオゲームをリリースするなど、コードが利用できなくなる場合があります。 このケースでは、すべてのコードが自由に利用できる等しいプロジェクト(PCやコンソールリリースのようなもの)、コンソール用のプライベートモジュールがあるかもしれませんが、PCでは、コードを完全にオープンソースにすることができます)。";
-        document.getElementById("aboutpsp2").innerHTML = "Abendiixのソフトウェアは、その使用上の疑いを残さないために、対応するライセンスと著作権主張を常に持っているでしょう。";
+        document.getElementById("aboutpsp1").innerHTML = "Abendiixのソフトウェアはすべてオープンソースであり、誰でも利用できるようにします。ただし、プラットフォーム会社のプライベートコードを使用するビデオゲームのリリースなど、コードが利用できない場合もあります。その場合には、すべてのコードが自由に利用できる同等のプロジェクトが常に提供されます（PCとコンソールのリリースを考えてみてください。コンソールにはプライベートなモジュールがあるかもしれませんが、PCには完全にオープンソースのコードを提供できます）。";
+        document.getElementById("aboutpsp2").innerHTML = "Abendiixのソフトウェアには常に適切なライセンスと著作権主張が付随し、その使用に関する疑問が残らないようにします。";
 
         document.getElementById("projectsarttitle").innerHTML = "アート";
-        document.getElementById("aboutpap1").innerHTML = "すべてのAbendiixのアートは、Abendiixのソフトウェアに類似したアプローチを持ち、常に自由に利用できます(一部は完全に無料ではありません)。";
-        document.getElementById("aboutpap2").innerHTML = "すべての作品は、その使用上の疑問を残さないために、その対応するライセンスと著作権主張です。";
-        document.getElementById("aboutpap3").innerHTML = "美術が非健康/有毒な方法で、関係者に使用/売られている場合を避けるために、より制限的なライセンスと著作権の主張があります。";
-        document.getElementById("aboutpap4").innerHTML = "同時に、このライセンス、著作権のクレームおよび制限は、誰やその創造的なプロセスに反して害を及ぼすことはありません(ファンアートを作る、商品化を販売するなど)。 私は誰もが自分の情熱を共有し、プロセスにそれらを制限しないように歓迎したいです(そして、私は人々が私のプロジェクトについて共有しているかを見て満足しているでしょう :D)。";
+        document.getElementById("aboutpap1").innerHTML = "Abendiixのアートは、Abendiixのソフトウェアと同様のアプローチを採用し、常に自由（自由度の意味で、完全に無料でない場合もあります）に利用できるようにします。";
+        document.getElementById("aboutpap2").innerHTML = "すべてのアート作品には、その使用に関する疑問が残らないように、適切なライセンスと著作権主張が付随します。";
+        document.getElementById("aboutpap3").innerHTML = "アートが関係するすべての当事者にとって健全でない、または有害な方法で使用または販売されるのを避けるために、より制限的なライセンスや著作権主張が付随する場合があります。";
+        document.getElementById("aboutpap4").innerHTML = "同時に、これらのライセンス、著作権主張、制限は、誰かやその創造的なプロセスに対抗したり害を及ぼしたりすることを目的とするものではありません（例えば、ファンアートを作成したり、プロジェクトに関連するマーチャンダイジングを販売したりすることなど）。すべての人が自分の情熱を共有できるようにし、プロセスを制限することはありません（そして、私のプロジェクトに関して人々が共有するものを見るのはとても楽しみです :D）。";
 
         //Presskits
         //Abendiix
         document.getElementById("presskits").innerHTML = "プレスキット";
 
-        document.getElementById("abendiixzip").ariaLabel = "2つのモードでのAbendiixロゴとバナーを含むZIP形式のファイル:ライトモードとダークモード、svgおよびpng形式と128、256および512ピクセル。";
-        document.getElementById("abendiixzip").innerHTML = "すべてのロゴをダウンロード";
+        document.getElementById("abendiixzip").ariaLabel = "Abendiixのロゴとバナーのクリアモードとダークモード、SVGおよびPNG形式、128、256、512ピクセルのZIPファイル。";
+        document.getElementById("abendiixzip").innerHTML = "すべてをダウンロード";
 
-        document.getElementById("logodark").innerHTML = "ロゴ(ダークバージョン)";
-        document.getElementById("logodarkthumbnail").alt = "Abendiixのダークロゴがミニチュアとして機能。";
-        document.getElementById("logodark128svg").ariaLabel = "Abendiixロゴ、ダークバージョン、svg、128ピクセルをダウンロード。";
-        document.getElementById("logodark256svg").ariaLabel = "Abendiixロゴ、ダークバージョン、svg、256ピクセルをダウンロード。";
-        document.getElementById("logodark512svg").ariaLabel = "Abendiixロゴ、ダークバージョン、svg、512ピクセルをダウンロード。";
-        document.getElementById("logodark128png").ariaLabel = "Abendiixロゴ、ダークバージョン、png、128ピクセルをダウンロード。";
-        document.getElementById("logodark256png").ariaLabel = "Abendiixロゴ、ダークバージョン、png、256ピクセルをダウンロード。";
-        document.getElementById("logodark512png").ariaLabel = "Abendiixロゴ、ダークバージョン、png、512ピクセルをダウンロード。";
+        document.getElementById("logodark").innerHTML = "ロゴ（ダークバージョン）";
+        document.getElementById("logodarkthumbnail").alt = "Abendiixのダークロゴでサムネイルとして使用されます。";
+        document.getElementById("logodark128svg").ariaLabel = "Abendiixのロゴ、ダークモード、SVG、128ピクセルをダウンロードする。";
+        document.getElementById("logodark256svg").ariaLabel = "Abendiixのロゴ、ダークモード、SVG、256ピクセルをダウンロードする。";
+        document.getElementById("logodark512svg").ariaLabel = "Abendiixのロゴ、ダークモード、SVG、512ピクセルをダウンロードする。";
+        document.getElementById("logodark128png").ariaLabel = "Abendiixのロゴ、ダークモード、PNG、128ピクセルをダウンロードする。";
+        document.getElementById("logodark256png").ariaLabel = "Abendiixのロゴ、ダークモード、PNG、256ピクセルをダウンロードする。";
+        document.getElementById("logodark512png").ariaLabel = "Abendiixのロゴ、ダークモード、PNG、512ピクセルをダウンロードする。";
 
-        document.getElementById("logoclear").innerHTML = "ロゴ(クリアバージョン)";
-        document.getElementById("logoclearthumbnail").alt = "Abendiixのクリアロゴがミニチュアとして機能。";
-        document.getElementById("logoclear128svg").ariaLabel = "Abendiixロゴ、クリアバージョン、svg、128ピクセルをダウンロード。";
-        document.getElementById("logoclear256svg").ariaLabel = "Abendiixロゴ、クリアバージョン、svg、256ピクセルをダウンロード。";
-        document.getElementById("logoclear512svg").ariaLabel = "Abendiixロゴ、クリアバージョン、svg、512ピクセルをダウンロード。";
-        document.getElementById("logoclear128png").ariaLabel = "Abendiixロゴ、クリアバージョン、png、128ピクセルをダウンロード。";
-        document.getElementById("logoclear256png").ariaLabel = "Abendiixロゴ、クリアバージョン、png、256ピクセルをダウンロード。";
-        document.getElementById("logoclear512png").ariaLabel = "Abendiixロゴ、クリアバージョン、png、512ピクセルをダウンロード。";
+        document.getElementById("logoclear").innerHTML = "ロゴ（クリアバージョン）";
+        document.getElementById("logoclearthumbnail").alt = "Abendiixのクリアロゴでサムネイルとして使用されます。";
+        document.getElementById("logoclear128svg").ariaLabel = "Abendiixのロゴ、クリアモード、SVG、128ピクセルをダウンロードする。";
+        document.getElementById("logoclear256svg").ariaLabel = "Abendiixのロゴ、クリアモード、SVG、256ピクセルをダウンロードする。";
+        document.getElementById("logoclear512svg").ariaLabel = "Abendiixのロゴ、クリアモード、SVG、512ピクセルをダウンロードする。";
+        document.getElementById("logoclear128png").ariaLabel = "Abendiixのロゴ、クリアモード、PNG、128ピクセルをダウンロードする。";
+        document.getElementById("logoclear256png").ariaLabel = "Abendiixのロゴ、クリアモード、PNG、256ピクセルをダウンロードする。";
+        document.getElementById("logoclear512png").ariaLabel = "Abendiixのロゴ、クリアモード、PNG、512ピクセルをダウンロードする。";
 
-        document.getElementById("bannerdark").innerHTML = "バナー(ダークバージョン)";
-        document.getElementById("bannerdarkthumbnail").alt = "Abendiixのダークバナーがミニチュアとして機能。";
-        document.getElementById("bannerdark128svg").ariaLabel = "Abendiixバナー、ダークバージョン、svg、128ピクセルをダウンロード。";
-        document.getElementById("bannerdark256svg").ariaLabel = "Abendiixバナー、ダークバージョン、svg、256ピクセルをダウンロード。";
-        document.getElementById("bannerdark512svg").ariaLabel = "Abendiixバナー、ダークバージョン、svg、512ピクセルをダウンロード。";
-        document.getElementById("bannerdark128png").ariaLabel = "Abendiixバナー、ダークバージョン、png、128ピクセルをダウンロード。";
-        document.getElementById("bannerdark256png").ariaLabel = "Abendiixバナー、ダークバージョン、png、256ピクセルをダウンロード。";
-        document.getElementById("bannerdark512png").ariaLabel = "Abendiixバナー、ダークバージョン、png、512ピクセルをダウンロード。";
+        document.getElementById("bannerdark").innerHTML = "バナー（ダークバージョン）";
+        document.getElementById("bannerdarkthumbnail").alt = "Abendiixのダークバナーでサムネイルとして使用されます。";
+        document.getElementById("bannerdark128svg").ariaLabel = "Abendiixのバナー、ダークモード、SVG、128ピクセルをダウンロードする。";
+        document.getElementById("bannerdark256svg").ariaLabel = "Abendiixのバナー、ダークモード、SVG、256ピクセルをダウンロードする。";
+        document.getElementById("bannerdark512svg").ariaLabel = "Abendiixのバナー、ダークモード、SVG、512ピクセルをダウンロードする。";
+        document.getElementById("bannerdark128png").ariaLabel = "Abendiixのバナー、ダークモード、PNG、128ピクセルをダウンロードする。";
+        document.getElementById("bannerdark256png").ariaLabel = "Abendiixのバナー、ダークモード、PNG、256ピクセルをダウンロードする。";
+        document.getElementById("bannerdark512png").ariaLabel = "Abendiixのバナー、ダークモード、PNG、512ピクセルをダウンロードする。";
 
-        document.getElementById("bannerclear").innerHTML = "バナー(クリアバージョン)";
-        document.getElementById("bannerclearthumbnail").alt = "Abendiixのクリアバナーがミニチュアとして機能。";
-        document.getElementById("bannerclear128svg").ariaLabel = "Abendiixバナー、クリアバージョン、svg、128ピクセルをダウンロード。";
-        document.getElementById("bannerclear256svg").ariaLabel = "Abendiixバナー、クリアバージョン、svg、256ピクセルをダウンロード。";
-        document.getElementById("bannerclear512svg").ariaLabel = "Abendiixバナー、クリアバージョン、svg、512ピクセルをダウンロード。";
-        document.getElementById("bannerclear128png").ariaLabel = "Abendiixバナー、クリアバージョン、png、128ピクセルをダウンロード。";
-        document.getElementById("bannerclear256png").ariaLabel = "Abendiixバナー、クリアバージョン、png、256ピクセルをダウンロード。";
-        document.getElementById("bannerclear512png").ariaLabel = "Abendiixバナー、クリアバージョン、png、512ピクセルをダウンロード。";
+        document.getElementById("bannerclear").innerHTML = "バナー（クリアバージョン）";
+        document.getElementById("bannerclearthumbnail").alt = "Abendiixのクリアバナーでサムネイルとして使用されます。";
+        document.getElementById("bannerclear128svg").ariaLabel = "Abendiixのバナー、クリアモード、SVG、128ピクセルをダウンロードする。";
+        document.getElementById("bannerclear256svg").ariaLabel = "Abendiixのバナー、クリアモード、SVG、256ピクセルをダウンロードする。";
+        document.getElementById("bannerclear512svg").ariaLabel = "Abendiixのバナー、クリアモード、SVG、512ピクセルをダウンロードする。";
+        document.getElementById("bannerclear128png").ariaLabel = "Abendiixのバナー、クリアモード、PNG、128ピクセルをダウンロードする。";
+        document.getElementById("bannerclear256png").ariaLabel = "Abendiixのバナー、クリアモード、PNG、256ピクセルをダウンロードする。";
+        document.getElementById("bannerclear512png").ariaLabel = "Abendiixのバナー、クリアモード、PNG、512ピクセルをダウンロードする。";
 
         //Sprites Love
-        document.getElementById("spriteslovezip").ariaLabel = "2つの関係を持つ異なるSprites LoveロゴとZIP形式のファイル:1〜1ピクセルと1〜10ピクセル、svgおよびpng形式で。";
-        document.getElementById("spriteslovezip").innerHTML = "すべてのロゴをダウンロード";
+        document.getElementById("spriteslovezip").ariaLabel = "Sprites Loveの異なるロゴが1:1比率と1:10比率（ピクセル単位）で、SVGおよびPNG形式のZIPファイル。";
+        document.getElementById("spriteslovezip").innerHTML = "すべてをダウンロード";
 
         document.getElementById("spriteslovemain").innerHTML = "メインロゴ";
-        document.getElementById("spriteslovemainthumbnail").alt = "ミニチュアとして機能するSprites Loveのメインロゴ。";
-        document.getElementById("spriteslovemain1-1svg").ariaLabel =  "SpritesLoveのメインロゴをダウンロード, 比 1-1, svg。";
-        document.getElementById("spriteslovemain1-10svg").ariaLabel = "SpritesLoveのメインロゴをダウンロード, 比 1-10, svg。";
-        document.getElementById("spriteslovemain1-1png").ariaLabel =  "SpritesLoveのメインロゴをダウンロード, 比 1-1, png。";
-        document.getElementById("spriteslovemain1-10png").ariaLabel = "SpritesLoveのメインロゴをダウンロード, 比 1-10, png。";
+        document.getElementById("spriteslovemainthumbnail").alt = "Sprites Loveのメインロゴ（サムネイル用）。";
+        document.getElementById("spriteslovemain1-1svg").ariaLabel =  "Sprites Loveのメインロゴをダウンロード（1:1ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovemain1-10svg").ariaLabel = "Sprites Loveのメインロゴをダウンロード（1:10ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovemain1-1png").ariaLabel =  "Sprites Loveのメインロゴをダウンロード（1:1ピクセル比、PNG形式）。";
+        document.getElementById("spriteslovemain1-10png").ariaLabel = "Sprites Loveのメインロゴをダウンロード（1:10ピクセル比、PNG形式）。";
 
         document.getElementById("spriteslovesquare").innerHTML = "スクエアロゴ";
-        document.getElementById("spriteslovesquarethumbnail").alt = "ミニチュアとして機能するSprites Loveスクエアロゴ。";
-        document.getElementById("spriteslovesquare1-1svg").ariaLabel =  "SpritesLoveのスクエアロゴをダウンロード, 比 1-1, svg。";
-        document.getElementById("spriteslovesquare1-10svg").ariaLabel = "SpritesLoveのスクエアロゴをダウンロード, 比 1-10, svg。";
-        document.getElementById("spriteslovesquare1-1png").ariaLabel =  "SpritesLoveのスクエアロゴをダウンロード, 比 1-1, png。";
-        document.getElementById("spriteslovesquare1-10png").ariaLabel = "SpritesLoveのスクエアロゴをダウンロード, 比 1-10, png。";
+        document.getElementById("spriteslovesquarethumbnail").alt = "Sprites Loveのスクエアロゴ（サムネイル用）。";
+        document.getElementById("spriteslovesquare1-1svg").ariaLabel =  "Sprites Loveのスクエアロゴをダウンロード（1:1ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovesquare1-10svg").ariaLabel = "Sprites Loveのスクエアロゴをダウンロード（1:10ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovesquare1-1png").ariaLabel =  "Sprites Loveのスクエアロゴをダウンロード（1:1ピクセル比、PNG形式）。";
+        document.getElementById("spriteslovesquare1-10png").ariaLabel = "Sprites Loveのスクエアロゴをダウンロード（1:10ピクセル比、PNG形式）。";
 
         document.getElementById("spritesloveshort").innerHTML = "ショートロゴ";
-        document.getElementById("spritesloveshortthumbnail").alt = "ミニチュアとして機能するSprites Loveショートロゴ。";
-        document.getElementById("spritesloveshort1-1svg").ariaLabel =  "SpritesLoveのショートロゴをダウンロード, 比 1-1, svg。";
-        document.getElementById("spritesloveshort1-10svg").ariaLabel = "SpritesLoveのショートロゴをダウンロード, 比 1-10, svg。";
-        document.getElementById("spritesloveshort1-1png").ariaLabel =  "SpritesLoveのショートロゴをダウンロード, 比 1-1, png。";
-        document.getElementById("spritesloveshort1-10png").ariaLabel = "SpritesLoveのショートロゴをダウンロード, 比 1-10, png。";
+        document.getElementById("spritesloveshortthumbnail").alt = "Sprites Loveのショートロゴ（サムネイル用）。";
+        document.getElementById("spritesloveshort1-1svg").ariaLabel =  "Sprites Loveのショートロゴをダウンロード（1:1ピクセル比、SVG形式）。";
+        document.getElementById("spritesloveshort1-10svg").ariaLabel = "Sprites Loveのショートロゴをダウンロード（1:10ピクセル比、SVG形式）。";
+        document.getElementById("spritesloveshort1-1png").ariaLabel =  "Sprites Loveのショートロゴをダウンロード（1:1ピクセル比、PNG形式）。";
+        document.getElementById("spritesloveshort1-10png").ariaLabel = "Sprites Loveのショートロゴをダウンロード（1:10ピクセル比、PNG形式）。";
 
         document.getElementById("spriteslovelong").innerHTML = "ロングロゴ";
-        document.getElementById("spriteslovelongthumbnail").alt = "ミニチュアとして機能するSprites Loveのロングロゴ。";
-        document.getElementById("spriteslovelong1-1svg").ariaLabel =  "SpritesLoveのロングロゴをダウンロード, 比 1-1, svg。";
-        document.getElementById("spriteslovelong1-10svg").ariaLabel = "SpritesLoveのロングロゴをダウンロード, 比 1-10, svg。";
-        document.getElementById("spriteslovelong1-1png").ariaLabel =  "SpritesLoveのロングロゴをダウンロード, 比 1-1, png。";
-        document.getElementById("spriteslovelong1-10png").ariaLabel = "SpritesLoveのロングロゴをダウンロード, 比 1-10, png。";
+        document.getElementById("spriteslovelongthumbnail").alt = "Sprites Loveのロングロゴ（サムネイル用）。";
+        document.getElementById("spriteslovelong1-1svg").ariaLabel =  "Sprites Loveのロングロゴをダウンロード（1:1ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovelong1-10svg").ariaLabel = "Sprites Loveのロングロゴをダウンロード（1:10ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovelong1-1png").ariaLabel =  "Sprites Loveのロングロゴをダウンロード（1:1ピクセル比、PNG形式）。";
+        document.getElementById("spriteslovelong1-10png").ariaLabel = "Sprites Loveのロングロゴをダウンロード（1:10ピクセル比、PNG形式）。";
 
-        document.getElementById("spriteslovebig").innerHTML = "大きいロゴ";
-        document.getElementById("spriteslovebigthumbnail").alt = "ミニチュアとして機能するSprites Loveの大きいロゴ。";
-        document.getElementById("spriteslovebig1-1svg").ariaLabel =  "SpritesLoveの大きいロゴをダウンロード, 比 1-1, svg。";
-        document.getElementById("spriteslovebig1-10svg").ariaLabel = "SpritesLoveの大きいロゴをダウンロード, 比 1-10, svg。";
-        document.getElementById("spriteslovebig1-1png").ariaLabel =  "SpritesLoveの大きいロゴをダウンロード, 比 1-1, png。";
-        document.getElementById("spriteslovebig1-10png").ariaLabel = "SpritesLoveの大きいロゴをダウンロード, 比 1-10, png。";
+        document.getElementById("spriteslovebig").innerHTML = "ビッグロゴ";
+        document.getElementById("spriteslovebigthumbnail").alt = "Sprites Loveのビッグロゴ（サムネイル用）。";
+        document.getElementById("spriteslovebig1-1svg").ariaLabel =  "Sprites Loveのビッグロゴをダウンロード（1:1ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovebig1-10svg").ariaLabel = "Sprites Loveのビッグロゴをダウンロード（1:10ピクセル比、SVG形式）。";
+        document.getElementById("spriteslovebig1-1png").ariaLabel =  "Sprites Loveのビッグロゴをダウンロード（1:1ピクセル比、PNG形式）。";
+        document.getElementById("spriteslovebig1-10png").ariaLabel = "Sprites Loveのビッグロゴをダウンロード（1:10ピクセル比、PNG形式）。";
 
         document.getElementById("spritesloveheart").innerHTML = "ハートロゴ";
-        document.getElementById("spritesloveheartthumbnail").alt = "ミニチュアとして機能するSprites Loveハートロゴ。";
-        document.getElementById("spritesloveheart1-1svg").ariaLabel =  "SpritesLoveのハートロゴをダウンロード, 比 1-1, svg。";
-        document.getElementById("spritesloveheart1-10svg").ariaLabel = "SpritesLoveのハートロゴをダウンロード, 比 1-10, svg。";
-        document.getElementById("spritesloveheart1-1png").ariaLabel =  "SpritesLoveのハートロゴをダウンロード, 比 1-1, png。";
-        document.getElementById("spritesloveheart1-10png").ariaLabel = "SpritesLoveのハートロゴをダウンロード, 比 1-10, png。";
+        document.getElementById("spritesloveheartthumbnail").alt = "Sprites Loveのハートロゴ（サムネイル用）。";
+        document.getElementById("spritesloveheart1-1svg").ariaLabel =  "Sprites Loveのハートロゴをダウンロード（1:1ピクセル比、SVG形式）。";
+        document.getElementById("spritesloveheart1-10svg").ariaLabel = "Sprites Loveのハートロゴをダウンロード（1:10ピクセル比、SVG形式）。";
+        document.getElementById("spritesloveheart1-1png").ariaLabel =  "Sprites Loveのハートロゴをダウンロード（1:1ピクセル比、PNG形式）。";
+        document.getElementById("spritesloveheart1-10png").ariaLabel = "Sprites Loveのハートロゴをダウンロード（1:10ピクセル比、PNG形式）。";
 
         //Trom
-        document.getElementById("tromzip").innerHTML = "すべてのファイルをダウンロードします";
-        document.getElementById("tromzip").ariaLabel = "Trom のロゴとゲームのスクリーンショットを svg と png 形式の zip ファイル。";
+        document.getElementById("tromzip").innerHTML = "すべてをダウンロード";
+        document.getElementById("tromzip").ariaLabel = "Tromのロゴとゲームのスクリーンショット（SVG形式とPNG形式）のZIPファイル。";
         document.getElementById("logotrom").innerHTML = "ロゴ";
-        document.getElementById("logotromthumbnail").alt = "サムネイルとして機能するTromのロゴ。";
-        document.getElementById("logotromsvg").ariaLabel = "Tromのロゴ、svgをダウンロード。";
-        document.getElementById("logotrompng").ariaLabel = "Tromのロゴ、pngをダウンロード。";
-        document.getElementById("screenshotstrom").innerHTML = "ゲームのスクリーンショット(画像をクリックしてダウンロードします)";
-        document.getElementById("menutrom").ariaLabel = "Tromのメニュースクリーンショット、pngをダウンロード。";
-        document.getElementById("screenshottrommenu").alt = "サムネイルとして機能するTromのメニュースクリーンショット。";
-        document.getElementById("game1_1trom").ariaLabel = "Trom初のゲームモード初のスクリーンショットをダウンロード, png。";
-        document.getElementById("screenshottromgame1_1").alt = "Trom 初のゲームモードの最初のスクリーンショットは、サムネイルとして機能します。";
-        document.getElementById("game1_2trom").ariaLabel = "TRom初のゲームモードの2番目のスクリーンショットをダウンロード, png。";
-        document.getElementById("screenshottromgame1_2").alt = "Trom の最初のゲームモードの第 2 スクリーンショットは、サムネイルとして機能します。";
-        document.getElementById("game2trom").ariaLabel = "ダウンロード Tromの2番目のゲームモードのスクリーンショット、png。";
-        document.getElementById("screenshottromgame2").alt = "サムネイルとして機能するTromの2番目のゲームスクリーンショット。";
-        document.getElementById("configtrom").ariaLabel = "Tromの構成スクリーンショット、pngをダウンロード。";
-        document.getElementById("screenshottromconfig").alt = "サムネイルとして機能するTromの構成スクリーンショット。";
+        document.getElementById("logotromthumbnail").alt = "Tromのロゴ（サムネイル用）。";
+        document.getElementById("logotromsvg").ariaLabel = "Tromのロゴをダウンロード（SVG形式）。";
+        document.getElementById("logotrompng").ariaLabel = "Tromのロゴをダウンロード（PNG形式）。";
+        document.getElementById("screenshotstrom").innerHTML = "ゲームのスクリーンショット（画像をクリックしてダウンロード）";
+        document.getElementById("menutrom").ariaLabel = "Tromのメニューのスクリーンショットをダウンロード（PNG形式）。";
+        document.getElementById("screenshottrommenu").alt = "Tromのメニューのスクリーンショット（サムネイル用）。";
+        document.getElementById("game1_1trom").ariaLabel = "Tromの最初のゲームモードの最初のスクリーンショットをダウンロード（PNG形式）。";
+        document.getElementById("screenshottromgame1_1").alt = "Tromの最初のゲームモードの最初のスクリーンショット（サムネイル用）。";
+        document.getElementById("game1_2trom").ariaLabel = "Tromの最初のゲームモードの2番目のスクリーンショットをダウンロード（PNG形式）。";
+        document.getElementById("screenshottromgame1_2").alt = "Tromの最初のゲームモードの2番目のスクリーンショット（サムネイル用）。";
+        document.getElementById("game2trom").ariaLabel = "Tromの2番目のゲームモードのスクリーンショットをダウンロード（PNG形式）。";
+        document.getElementById("screenshottromgame2").alt = "Tromの2番目のゲームのスクリーンショット（サムネイル用）。";
+        document.getElementById("configtrom").ariaLabel = "Tromの設定のスクリーンショットをダウンロード（PNG形式）。";
+        document.getElementById("screenshottromconfig").alt = "Tromの設定のスクリーンショット（サムネイル用）。";
 
         //Privacy Policies
         document.getElementById("privacypolicies").innerHTML = "プライバシーポリシー";
-        document.getElementById("trompp").innerHTML = "Tromは、あらゆる種類のデータを生成せず、あらゆる種類のサーバーやデータベースに送信しません。";
+        document.getElementById("trompp").innerHTML = "Tromはデータを生成せず、サーバーやデータベースに送信することもありません。";
 
         //External sites
         document.getElementById("tips").innerHTML = "ヒント";
-        document.getElementById("ko-filink").ariaLabel = "AbendiixへのリンクKo-fi。";
-        document.getElementById("ko-fi").alt = "AbendiixのプロファイルにリダイレクトするKo-fiブラックアイコン。";
+        document.getElementById("ko-filink").ariaLabel = "AbendiixのKo-fiへのリンク。";
+        document.getElementById("ko-fi").alt = "Abendiixのプロフィールにリダイレクトする黒いKo-fiアイコン（クリアモード）。";
 
         document.getElementById("c&r").innerHTML = "コードとリリース";
-        document.getElementById("githublink").ariaLabel = "AbendiixへのリンクGitHub。";
-        document.getElementById("github").alt = "AbendiixのプロファイルにリダイレクトするGitHubブラックアイコン。";
-        document.getElementById("itchiolink").ariaLabel = "Abendiixへのリンクitch.io。";
-        document.getElementById("itchio").alt = "Abendiixのプロファイルにリダイレクトするitch.ioブラックアイコン。";
-        document.getElementById("playstorelink").ariaLabel = "AbendiixへのリンクPlay Store。";
-        document.getElementById("playstore").alt = "AbendiixのプロファイルにリダイレクトするPlay Storeブラックアイコン。";
+        document.getElementById("githublink").ariaLabel = "AbendiixのGitHubへのリンク。";
+        document.getElementById("github").alt = "Abendiixのプロフィールにリダイレクトする黒いGitHubアイコン（クリアモード）。";
+        document.getElementById("itchiolink").ariaLabel = "AbendiixのItch.ioへのリンク。";
+        document.getElementById("itchio").alt = "Abendiixのプロフィールにリダイレクトする黒いitch.ioアイコン（クリアモード）。";
+        document.getElementById("playstorelink").ariaLabel = "AbendiixのPlay Storeへのリンク。";
+        document.getElementById("playstore").alt = "Abendiixのプロフィールにリダイレクトする黒いPlay Storeアイコン（クリアモード）。";
 
         document.getElementById("socials").innerHTML = "SNS";
-        document.getElementById("twitterlink").ariaLabel = "AbendiixへのリンクTwitter。";
-        document.getElementById("twitter").alt = "AbendiixのプロファイルにリダイレクトするTwitterブラックアイコン。";
-        document.getElementById("blueskylink").ariaLabel = "AbendiixへのリンクBluesky。";
-        document.getElementById("bluesky").alt = "AbendiixのプロファイルにリダイレクトするBlueskyブラックアイコン。";
+        document.getElementById("twitterlink").ariaLabel = "AbendiixのTwitterへのリンク。";
+        document.getElementById("twitter").alt = "Abendiixのプロフィールにリダイレクトする黒いTwitterアイコン（クリアモード）。";
+        document.getElementById("blueskylink").ariaLabel = "AbendiixのBlueskyへのリンク。";
+        document.getElementById("bluesky").alt = "Abendiixのプロフィールにリダイレクトする黒いBlueskyアイコン（クリアモード）。";
 
         //Contact section
-        document.getElementById("contact").innerHTML = "メールでのお問い合わせ";
-        document.getElementById("copy").ariaLabel = "Abendiixの連絡先メールをクリップボードにコピーします。";
+        document.getElementById("contact").innerHTML = "メールでの連絡";
+        document.getElementById("copy").ariaLabel = "Abendiixの連絡先メールアドレスをクリップボードにコピーする。";
         document.getElementById("copy").innerHTML = "コピー";
-        document.getElementById("openApp").ariaLabel = "Abendiixに連絡する既定のメールアプリケーションを開く。";
-        document.getElementById("openApp").innerHTML = "アプリケーションを開く";
+        document.getElementById("openApp").ariaLabel = "Abendiixに連絡するためにデフォルトでメールアプリを開く。";
+        document.getElementById("openApp").innerHTML = "アプリを開く";
         document.getElementById("openApp").href = "mailto:contact@abendiix [.] com";
 
         //Copyright
-        document.getElementById("cc0").ariaLabel = "CC0のCreative Commonsページへのリンク。";
-        document.getElementById("fontAwe").ariaLabel = "FontAwesomeページへのリンク。";
+        document.getElementById("cc0").ariaLabel = "CC0に関するクリエイティブ・コモンズのページへのリンク。";
+        document.getElementById("fontAwe").ariaLabel = "Font Awesomeのページへのリンク。";
 
         //Emoti gag
-        document.getElementById("emotiText").innerHTML = "見つけた！";
-        document.getElementById("emotigag").ariaLabel = "食のランダムな絵文字を投げるエモチ型のテキストについて少し冗談。";
-        document.getElementById("emoti").ariaLabel = "星を投げる幸せな顔や、ランダムに選ばれた食物絵文字を形成する異なる文字。";
+        document.getElementById("emotiText").innerHTML = "私を見つけました！";
+        document.getElementById("emotigag").ariaLabel = "ランダムに生成された食べ物の絵文字を投げる絵文字のようなテキストに関する小さなギャグ。";
+        document.getElementById("emoti").ariaLabel = "星とランダムな食べ物の絵文字を投げるように見える顔文字を形成する複数の文字が並んでいる。";
     }
 }
