@@ -284,10 +284,20 @@ function updateTexts(language)
         document.getElementById("playstore").alt = "Icono negro de Play Store que redirige al perfil de Abendiix.";
 
         document.getElementById("socials").innerHTML = "RRSS";
+        document.getElementById("rsslink").ariaLabel = "Enlace al RSS de Abendiix.";
+        document.getElementById("rss").alt = "Icono negro de RSS que redirige al RSS de Abendiix.";
         document.getElementById("twitterlink").ariaLabel = "Enlace al Twitter de Abendiix.";
         document.getElementById("twitter").alt = "Icono negro de Twitter que redirige al perfil de Abendiix.";
         document.getElementById("blueskylink").ariaLabel = "Enlace al Bluesky de Abendiix.";
         document.getElementById("bluesky").alt = "Icono negro de Bluesky que redirige al perfil de Abendiix.";
+        document.getElementById("tiktoklink").ariaLabel = "Enlace al Bluesky de Abendiix.";
+        document.getElementById("tiktok").alt = "Icono negro de Bluesky que redirige al perfil de Abendiix.";
+        document.getElementById("instagramlink").ariaLabel = "Enlace al Bluesky de Abendiix.";
+        document.getElementById("instagram").alt = "Icono negro de Bluesky que redirige al perfil de Abendiix.";
+        document.getElementById("youtubelink").ariaLabel = "Enlace al Bluesky de Abendiix.";
+        document.getElementById("youtube").alt = "Icono negro de Bluesky que redirige al perfil de Abendiix.";
+        document.getElementById("redditlink").ariaLabel = "Enlace al Bluesky de Abendiix.";
+        document.getElementById("reddit").alt = "Icono negro de Bluesky que redirige al perfil de Abendiix.";
 
         //Contact section
         document.getElementById("contact").innerHTML = "Contactar via email";
@@ -526,10 +536,20 @@ function updateTexts(language)
         document.getElementById("playstore").alt = "Play Store icon in black (clear mode) that redirects to Abendiix's profile.";
 
         document.getElementById("socials").innerHTML = "Socials";
+        document.getElementById("rsslink").ariaLabel = "Link to Abendiix's RSS.";
+        document.getElementById("rss").alt = "RSS icon in black (clear mode) that redirects to Abendiix's RSS.";
         document.getElementById("twitterlink").ariaLabel = "Link to Abendiix's Twitter.";
         document.getElementById("twitter").alt = "Twitter icon in black (clear mode) that redirects to Abendiix's profile.";
         document.getElementById("blueskylink").ariaLabel = "Link to Abendiix's Bluesky.";
         document.getElementById("bluesky").alt = "Bluesky icon in black (clear mode) that redirects to Abendiix's profile.";
+        document.getElementById("tiktoklink").ariaLabel = "Link to Abendiix's TikTok.";
+        document.getElementById("tiktok").alt = "TikTok icon in black (clear mode) that redirects to Abendiix's profile.";
+        document.getElementById("instagramlink").ariaLabel = "Link to Abendiix's Instagram.";
+        document.getElementById("instagram").alt = "Instagram icon in black (clear mode) that redirects to Abendiix's profile.";
+        document.getElementById("youtubelink").ariaLabel = "Link to Abendiix's YouTube.";
+        document.getElementById("youtube").alt = "YouTube icon in black (clear mode) that redirects to Abendiix's profile.";
+        document.getElementById("redditlink").ariaLabel = "Link to Abendiix's Reddit.";
+        document.getElementById("reddit").alt = "Reddit icon in black (clear mode) that redirects to Abendiix's profile.";
 
         //Contact section
         document.getElementById("contact").innerHTML = "Contact via email";
@@ -755,7 +775,7 @@ function updateTexts(language)
         document.getElementById("trompp").innerHTML = "Tromはデータを生成せず、サーバーやデータベースに送信することもありません。";
 
         //External sites
-        document.getElementById("tips").innerHTML = "ヒント";
+        document.getElementById("tips").innerHTML = "チップ";
         document.getElementById("ko-filink").ariaLabel = "AbendiixのKo-fiへのリンク。";
         document.getElementById("ko-fi").alt = "Abendiixのプロフィールにリダイレクトする黒いKo-fiアイコン（クリアモード）。";
 
@@ -768,10 +788,20 @@ function updateTexts(language)
         document.getElementById("playstore").alt = "Abendiixのプロフィールにリダイレクトする黒いPlay Storeアイコン（クリアモード）。";
 
         document.getElementById("socials").innerHTML = "SNS";
+        document.getElementById("rsslink").ariaLabel = "AbendiixのRSSへのリンク。";
+        document.getElementById("rss").alt = "AbendiixのRSSにリダイレクトする黒いTwitterアイコン（クリアモード）。";
         document.getElementById("twitterlink").ariaLabel = "AbendiixのTwitterへのリンク。";
         document.getElementById("twitter").alt = "Abendiixのプロフィールにリダイレクトする黒いTwitterアイコン（クリアモード）。";
         document.getElementById("blueskylink").ariaLabel = "AbendiixのBlueskyへのリンク。";
         document.getElementById("bluesky").alt = "Abendiixのプロフィールにリダイレクトする黒いBlueskyアイコン（クリアモード）。";
+        document.getElementById("tiktoklink").ariaLabel = "AbendiixのTikTokへのリンク。";
+        document.getElementById("tiktok").alt = "Abendiixのプロフィールにリダイレクトする黒いTikTokアイコン（クリアモード）。";
+        document.getElementById("instagramlink").ariaLabel = "AbendiixのInstagramへのリンク。";
+        document.getElementById("instagram").alt = "Abendiixのプロフィールにリダイレクトする黒いInstagramアイコン（クリアモード）。";
+        document.getElementById("youtubelink").ariaLabel = "AbendiixのYouTubeへのリンク。";
+        document.getElementById("youtube").alt = "Abendiixのプロフィールにリダイレクトする黒いYouTubeアイコン（クリアモード）。";
+        document.getElementById("redditlink").ariaLabel = "AbendiixのRedditへのリンク。";
+        document.getElementById("reddit").alt = "Abendiixのプロフィールにリダイレクトする黒いRedditアイコン（クリアモード）。";
 
         //Contact section
         document.getElementById("contact").innerHTML = "メールでの連絡";
