@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+    <channel>
+        <title>Abendiix | Games, tools and more!</title>
+        <link>https://abendiix.com/</link>
+        <description>I'm Abendiix and I make games, tools and anything that can change the world,
+            making it a better place for everyone.</description>
+
+        <category>Software development</category>
+
+        <copyright>Copyright (c) 2024 Abendiix - CC0</copyright>
+        <item>
+
+            <image>
+                <url>https://abendiix.com/assets/img/logos/blackBanner.svg</url>
+                <title>Abendiix</title>
+            </image>
+            <title>Template</title>
+            <link>https://spriteslove.abendiix.com/</link>
+            <description>Template</description>
+        </item>
+    </channel>
+
+</rss> 

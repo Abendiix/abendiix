@@ -282,6 +282,8 @@ function updateTexts(language)
         document.getElementById("itchio").alt = "Icono negro de itch.io que redirige al perfil de Abendiix.";
         document.getElementById("playstorelink").ariaLabel = "Enlace al Play Store de Abendiix.";
         document.getElementById("playstore").alt = "Icono negro de Play Store que redirige al perfil de Abendiix.";
+        document.getElementById("appstorelink").ariaLabel = "Enlace al App Store de Abendiix.";
+        document.getElementById("appstore").alt = "Icono negro de App Store que redirige al perfil de Abendiix.";
 
         document.getElementById("socials").innerHTML = "RRSS";
         document.getElementById("rsslink").ariaLabel = "Enlace al RSS de Abendiix.";
@@ -534,6 +536,8 @@ function updateTexts(language)
         document.getElementById("itchio").alt = "itch.io icon in black (clear mode) that redirects to Abendiix's profile.";
         document.getElementById("playstorelink").ariaLabel = "Link to Abendiix's Play Store.";
         document.getElementById("playstore").alt = "Play Store icon in black (clear mode) that redirects to Abendiix's profile.";
+        document.getElementById("appstorelink").ariaLabel = "Link to Abendiix's App Store.";
+        document.getElementById("appstore").alt = "App Store icon in black (clear mode) that redirects to Abendiix's profile.";
 
         document.getElementById("socials").innerHTML = "Socials";
         document.getElementById("rsslink").ariaLabel = "Link to Abendiix's RSS.";
@@ -786,6 +790,8 @@ function updateTexts(language)
         document.getElementById("itchio").alt = "Abendiixのプロフィールにリダイレクトする黒いitch.ioアイコン（クリアモード）。";
         document.getElementById("playstorelink").ariaLabel = "AbendiixのPlay Storeへのリンク。";
         document.getElementById("playstore").alt = "Abendiixのプロフィールにリダイレクトする黒いPlay Storeアイコン（クリアモード）。";
+        document.getElementById("appstorelink").ariaLabel = "AbendiixのApp Storeへのリンク。";
+        document.getElementById("appstore").alt = "Abendiixのプロフィールにリダイレクトする黒いApp Storeアイコン（クリアモード）。";
 
         document.getElementById("socials").innerHTML = "SNS";
         document.getElementById("rsslink").ariaLabel = "AbendiixのRSSへのリンク。";
