@@ -11,14 +11,11 @@
 
         <copyright>Copyright (c) 2024 Abendiix - CC0</copyright>
         <item>
-
-            <image>
-                <url>https://abendiix.com/assets/img/logos/blackBanner.svg</url>
-                <title>Abendiix</title>
-            </image>
-            <title>Template</title>
-            <link>https://spriteslove.abendiix.com/</link>
-            <description>Template</description>
+            <title>4 symbols</title>
+            <link>https://abendiix.com/</link>
+            <description>
+                In this feed, you will find 4 different types of posts. Release posts, preview posts, green posts and extra posts that will cover anything else the previous sections do not cover.
+            </description>
         </item>
     </channel>
 
