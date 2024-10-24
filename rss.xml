@@ -17,6 +17,13 @@
                 In this feed, you will find 4 different types of posts. Release posts, preview posts, green posts and extra posts that will cover anything else the previous sections do not cover.
             </description>
         </item>
+        <item>
+            <title>Release - Website</title>
+            <link>https://abendiix.com/</link>
+            <description>
+                The website is now fully functional!
+            </description>
+        </item>
     </channel>
 
 </rss> 
