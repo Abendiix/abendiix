@@ -4,19 +4,30 @@
     <channel>
         <title>Abendiix | Games, tools and more!</title>
         <link>https://abendiix.com/</link>
-        <description>I'm Abendiix and I make games, tools and anything that can change the world,
-            making it a better place for everyone.</description>
+        <description>
+            I'm Abendiix and I make games, tools and anything that can change the world, making it a better place for everyone.
+        </description>
 
         <category>Software development</category>
 
         <copyright>Copyright (c) 2024 Abendiix - CC0</copyright>
+
         <item>
-            <title>4 symbols</title>
+            <title>Release - Sprites Love</title>
             <link>https://abendiix.com/</link>
             <description>
-                In this feed, you will find 4 different types of posts. Release posts, preview posts, green posts and extra posts that will cover anything else the previous sections do not cover.
+                My fonts are now available and with CC0 license!
             </description>
         </item>
+
+        <item>
+            <title>Release - Fonts</title>
+            <link>https://abendiix.com/</link>
+            <description>
+                My fonts are now available and with CC0 license!
+            </description>
+        </item>
+
         <item>
             <title>Release - Website</title>
             <link>https://abendiix.com/</link>
@@ -24,6 +35,15 @@
                 The website is now fully functional!
             </description>
         </item>
+
+        <item>
+            <title>4 symbols</title>
+            <link>https://abendiix.com/</link>
+            <description>
+                In this feed, you will find 4 different types of posts. Release posts, preview posts, green posts and extra posts that will cover anything else the previous sections do not cover.
+            </description>
+        </item>
+
     </channel>
 
 </rss> 
