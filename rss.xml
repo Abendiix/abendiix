@@ -13,6 +13,22 @@
         <copyright>Copyright (c) 2024 Abendiix - CC0</copyright>
 
         <item>
+            <title>Release - Trom</title>
+            <link>https://abendiix.com/</link>
+            <description>
+                Trom is now available! Play around with a trumpet and guess its sounds!
+            </description>
+        </item>
+
+        <item>
+            <title>Preview - Boto</title>
+            <link>https://abendiix.com/</link>
+            <description>
+                Say hi to Boto! The protagonist of my next game!
+            </description>
+        </item>
+
+        <item>
             <title>Release - Sprites Love</title>
             <link>https://abendiix.com/</link>
             <description>
@@ -46,4 +62,4 @@
 
     </channel>
 
-</rss> 
+</rss>
