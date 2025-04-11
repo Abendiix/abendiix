@@ -79,3 +79,9 @@ table td, table th {
   grid-template-columns: auto;
   justify-items: center;
 }
+
+@media (max-width: 992px) {
+  .txt {
+    font-size: 75%;
+  }
+}
