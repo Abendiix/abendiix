@@ -159,7 +159,7 @@ function updateTexts(language)
         document.getElementById("aboutpap4").innerHTML = "Al mismo tiempo, estas licencias, reclamaciones de derechos de autor y restricciones nunca buscarán ir en contra o dañar a nadie o su proceso creativo (como por ejemplo hacer fan-art o vender merchandising relacionados con algún proyecto). Quiero que todo el mundo se sienta bienvenido a compartir su pasión y que la gente no se vea restringida en el proceso (y estaré más que contento y feliz por ver qué comparte la gente sobre mis proyectos :D).";
 
         //Updates
-        document.getElementById("updatessection").display = "none";
+        document.getElementById("updatessection").style.display = "none";
 
         //Presskits
         //Abendiix
@@ -415,7 +415,7 @@ function updateTexts(language)
         document.getElementById("aboutpap4").innerHTML = "At the same time, this licenses, copyright claims and restrictions will never aim to go against and harm anyone or their creative process (such as making fan-art or selling merchandising related to some proyect). I want everyone to feel welcomed to share their passion and not restrict them on the process (and I'll be more than happy to see what people share about my projects :D).";
 
         //Updates
-        document.getElementById("updatessection").display = "block";
+        document.getElementById("updatessection").style.display = "block";
 
         //Presskits
         //Abendiix
@@ -673,7 +673,7 @@ function updateTexts(language)
         document.getElementById("aboutpap4").innerHTML = "同時に、これらのライセンス、著作権主張、制限は、誰かやその創造的なプロセスに対抗したり害を及ぼしたりすることを目的とするものではありません（例えば、ファンアートを作成したり、プロジェクトに関連するマーチャンダイジングを販売したりすることなど）。すべての人が自分の情熱を共有できるようにし、プロセスを制限することはありません（そして、私のプロジェクトに関して人々が共有するものを見るのはとても楽しみです :D）。";
 
         //Updates
-        document.getElementById("updatessection").display = "none";
+        document.getElementById("updatessection").style.display = "none";
 
         //Presskits
         //Abendiix
