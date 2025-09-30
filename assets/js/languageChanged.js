@@ -120,6 +120,13 @@ function updateTexts(language)
         document.getElementById("tromlinkappstore").ariaLabel = "Enlace a la página de App Store de Trom.";
         document.getElementById("tromlinkappstoreicon").alt = "Icono negro de App Store que redirige a la página de Trom.";
         
+        //BOTO LABO
+        document.getElementById("botolaboicon").alt = "Logo de BOTO LABO. Muestra al protagonista del juego, Boto (es un robot de dos piernas con una hoja en la cabeza).";
+        document.getElementById("botolabolinksteam").ariaLabel = "Enlace a la página de Steam de BOTO LABO.";
+        document.getElementById("botolabolinksteamicon").alt = "Icono negro de Steam que redirige a la página de BOTO LABO.";
+        document.getElementById("botolabolinkwebsite").ariaLabel = "Enlace a la página web de BOTO LABO.";
+        document.getElementById("botolabolinkwebsiteicon").alt = "Icono negro que simboliza un enlace web con dos cadenas en diagonal que redirige a la página web de BOTO LABO.";
+        
         //Fonts
         document.getElementById("fonts").alt = "Logo para las fuentes de Abendiix. Muestra una A mayúscula y una a minúscula en estilo pixel art.";
         document.getElementById("fnts").innerHTML = "Fuentes";
@@ -376,6 +383,13 @@ function updateTexts(language)
         document.getElementById("tromlinkplaystoreicon").alt = "Play Store icon in black (clear mode) that redirects to Trom's Play Store page.";
         document.getElementById("tromlinkappstore").ariaLabel = "Link to Trom's App Store page.";
         document.getElementById("tromlinkappstoreicon").alt = "App Store icon in black (clear mode) that redirects to Trom's App Store page.";
+        
+        //BOTO LABO
+        document.getElementById("botolaboicon").alt = "BOTO LABO's logo. It shows the protagonist of the game Boto (they are a two legged robot with a leaf on their head).";
+        document.getElementById("botolabolinksteam").ariaLabel = "Link to BOTO LABO's Steam page.";
+        document.getElementById("botolabolinksteamicon").alt = "Steam icon in black (clear mode) that redirects to BOTO LABO's Steam page.";
+        document.getElementById("botolabolinkwebsite").ariaLabel = "Link to BOTO LABO's website.";
+        document.getElementById("botolabolinkwebsiteicon").alt = "Black icon (in clear mode) that symbolizes a website link with two diagonal chains that redirects to BOTO LABO's website.";
         
         //Fonts
         document.getElementById("fonts").alt = "Logo for Abendiix's fonts. It shows a upper case A and a lower case a in pixel art style.";
@@ -635,6 +649,13 @@ function updateTexts(language)
         document.getElementById("tromlinkappstore").ariaLabel = "TromのApp Storeページへのリンク。";
         document.getElementById("tromlinkappstoreicon").alt = "TromのApp Storeページにリダイレクトする黒いApp Storeアイコン（クリアモード）。";
         
+        //BOT LABO
+        document.getElementById("botolaboicon").alt = "BOTO LABOのロゴ。";
+        document.getElementById("botolabolinksteam").ariaLabel = "BOTO LABOのSteamページへのリンク。";
+        document.getElementById("botolabolinksteamicon").alt = "BOTO LABOのSteamページにリダイレクトする黒いSteamアイコン（クリアモード）。";
+        document.getElementById("botolabolinkwebsite").ariaLabel = "BOTO LABOのウェブサイトへのリンク。";
+        document.getElementById("botolabolinkwebsiteicon").alt = "BOTO LABOのウェブサイトにリダイレクトする2つの斜めのチェーンを持つウェブサイトリンクを象徴する黒いアイコン（クリアモード）。";
+
         //Fonts
         document.getElementById("fonts").alt = "Abendiixのフォントのロゴ。大文字のAと小文字のaがピクセルアートスタイルで表示されています。";
         document.getElementById("fnts").innerHTML = "フォント";

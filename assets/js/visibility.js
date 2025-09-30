@@ -29,6 +29,7 @@ var art = document.getElementById("projectsart");
 
 var spriteslove = document.getElementById("spriteslove");
 var trom = document.getElementById("trom");
+var botolabo = document.getElementById("botolabo");
 var fonts = document.getElementById("fonts");
 
 function showAll()
@@ -46,6 +47,7 @@ function showGames()
 {
     spriteslove.style.display = "none";
     trom.style.display = "block";
+    botolabo.style.display = "block";
     fonts.style.display = "none";
     all.style.textDecoration = "none";
     games.style.textDecoration = "underline";
@@ -57,6 +59,7 @@ function showTools()
 {
     spriteslove.style.display = "block";
     trom.style.display = "none";
+    botolabo.style.display = "none";
     fonts.style.display = "none";
     all.style.textDecoration = "none";
     games.style.textDecoration = "none";
@@ -68,6 +71,7 @@ function showArt()
 {
     spriteslove.style.display = "none";
     trom.style.display = "none";
+    botolabo.style.display = "none";
     fonts.style.display = "block";
     all.style.textDecoration = "none";
     games.style.textDecoration = "none";
