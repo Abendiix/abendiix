@@ -649,7 +649,7 @@ function updateTexts(language)
         document.getElementById("tromlinkappstore").ariaLabel = "TromのApp Storeページへのリンク。";
         document.getElementById("tromlinkappstoreicon").alt = "TromのApp Storeページにリダイレクトする黒いApp Storeアイコン（クリアモード）。";
         
-        //BOT LABO
+        //BOTO LABO
         document.getElementById("botolaboicon").alt = "BOTO LABOのロゴ。";
         document.getElementById("botolabolinksteam").ariaLabel = "BOTO LABOのSteamページへのリンク。";
         document.getElementById("botolabolinksteamicon").alt = "BOTO LABOのSteamページにリダイレクトする黒いSteamアイコン（クリアモード）。";
